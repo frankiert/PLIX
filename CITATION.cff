@@ -1,0 +1,24 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: PLIX
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Sarah
+    family-names: Böning
+    email: sarah.boening@dlr.de
+    affiliation: DLR
+    orcid: 'https://orcid.org/0000-0002-7038-7971'
+  - given-names: Kobkaew
+    family-names: Opasjumruskit
+    affiliation: DLR
+    orcid: 'https://orcid.org/0000-0002-9206-6896'
+  - given-names: Christian
+    family-names: Kiesewetter
+    affiliation: DLR
+license: Apache-2.0
+version: '1.0'

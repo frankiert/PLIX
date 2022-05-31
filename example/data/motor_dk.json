@@ -1,0 +1,693 @@
+{
+  "Air Gap Thickness": {
+    "synonyms": [
+      "Air-gap",
+      "air gap",
+      "airgap"
+    ],
+    "main_symbol": "mm",
+    "symbols": [
+      "cm",
+      "m",
+      "dam",
+      "dm",
+      "km",
+      "\u03bcm",
+      "mm",
+      "nm"
+    ],
+    "units": [
+      "millimetre",
+      "centimetre",
+      "metre",
+      "decametre",
+      "decimetre",
+      "kilometre",
+      "micrometre",
+      "millimetre",
+      "nanometre"
+    ]
+  },
+  "Coil Resistance": {
+    "synonyms": [
+      "electromagnetic coil",
+      "spiral",
+      "Electrical Resistance"
+    ],
+    "main_symbol": "\u03a9",
+    "symbols": [
+      "\u03a9",
+      "c\u03a9",
+      "da\u03a9",
+      "d\u03a9",
+      "G\u03a9",
+      "\u03bc\u03a9",
+      "m\u03a9",
+      "n\u03a9"
+    ],
+    "units": [
+      "ohm",
+      "ohm",
+      "centiohm",
+      "decaohm",
+      "deciohm",
+      "gigaohm",
+      "kiloohm",
+      "megaohm",
+      "microohm",
+      "milliohm",
+      "nanoohm"
+    ]
+  },
+  "Copper Loss": {
+    "synonyms": [],
+    "main_symbol": "kW",
+    "symbols": [
+      "W",
+      "cW",
+      "daW",
+      "dW",
+      "GW",
+      "kW",
+      "MW",
+      "\u03bcW",
+      "mW",
+      "nW"
+    ],
+    "units": [
+      "kilowatt",
+      "watt",
+      "centiwatt",
+      "decawatt",
+      "deciwatt",
+      "gigawatt",
+      "kilowatt",
+      "megawatt",
+      "microwatt",
+      "milliwatt",
+      "nanowatt"
+    ]
+  },
+  "Core Loss": {
+    "synonyms": [],
+    "main_symbol": "kW",
+    "symbols": [
+      "W",
+      "cW",
+      "daW",
+      "dW",
+      "GW",
+      "kW",
+      "MW",
+      "\u03bcW",
+      "mW",
+      "nW"
+    ],
+    "units": [
+      "kilowatt",
+      "watt",
+      "centiwatt",
+      "decawatt",
+      "deciwatt",
+      "gigawatt",
+      "kilowatt",
+      "megawatt",
+      "microwatt",
+      "milliwatt",
+      "nanowatt"
+    ]
+  },
+  "Current Source": {
+    "synonyms": [
+      "Electric Current"
+    ],
+    "main_symbol": "A",
+    "symbols": [
+      "A",
+      "cA",
+      "daA",
+      "dA",
+      "GA",
+      "hA",
+      "kA",
+      "MA",
+      "\u03bcA",
+      "mA",
+      "nA"
+    ],
+    "units": [
+      "ampere",
+      "ampere",
+      "centiampere",
+      "decaampere",
+      "deciampere",
+      "gigaampere",
+      "hectoampere",
+      "kiloampere",
+      "megaampere",
+      "microampere",
+      "milliampere",
+      "nanoampere"
+    ]
+  },
+  "Eddy Current Losses": {
+    "synonyms": [
+      "eddy current loss"
+    ],
+    "main_symbol": "kW",
+    "symbols": [
+      "W",
+      "cW",
+      "daW",
+      "dW",
+      "GW",
+      "kW",
+      "MW",
+      "\u03bcW",
+      "mW",
+      "nW"
+    ],
+    "units": [
+      "kilowatt",
+      "watt",
+      "centiwatt",
+      "decawatt",
+      "deciwatt",
+      "gigawatt",
+      "kilowatt",
+      "megawatt",
+      "microwatt",
+      "milliwatt",
+      "nanowatt"
+    ]
+  },
+  "Electromagnetic Efficiency": {
+    "synonyms": [
+      "mechanical efficiency"
+    ],
+    "main_symbol": "%",
+    "symbols": [
+      "%"
+    ],
+    "units": [
+      "percentage",
+      "%",
+      "percentage",
+      "%"
+    ]
+  },
+  "Machine Length": {
+    "synonyms": [
+      "length unit"
+    ],
+    "main_symbol": "mm",
+    "symbols": [
+      "cm",
+      "m",
+      "dam",
+      "dm",
+      "km",
+      "\u03bcm",
+      "mm",
+      "nm"
+    ],
+    "units": [
+      "millimetre",
+      "centimetre",
+      "metre",
+      "decametre",
+      "decimetre",
+      "kilometre",
+      "micrometre",
+      "millimetre",
+      "nanometre"
+    ]
+  },
+  "Machine Loss Totals": {
+    "synonyms": [],
+    "main_symbol": "kW",
+    "symbols": [
+      "W",
+      "cW",
+      "daW",
+      "dW",
+      "GW",
+      "kW",
+      "MW",
+      "\u03bcW",
+      "mW",
+      "nW"
+    ],
+    "units": [
+      "kilowatt",
+      "watt",
+      "centiwatt",
+      "decawatt",
+      "deciwatt",
+      "gigawatt",
+      "kilowatt",
+      "megawatt",
+      "microwatt",
+      "milliwatt",
+      "nanowatt"
+    ]
+  },
+  "Mechanical Power": {
+    "synonyms": [],
+    "main_symbol": "kW",
+    "symbols": [
+      "W",
+      "cW",
+      "daW",
+      "dW",
+      "GW",
+      "kW",
+      "MW",
+      "\u03bcW",
+      "mW",
+      "nW"
+    ],
+    "units": [
+      "kilowatt",
+      "watt",
+      "centiwatt",
+      "decawatt",
+      "deciwatt",
+      "gigawatt",
+      "kilowatt",
+      "megawatt",
+      "microwatt",
+      "milliwatt",
+      "nanowatt"
+    ]
+  },
+  "Number Of Coil": {
+    "synonyms": [
+      "number of coils",
+      "number coils",
+      "# coils",
+      "#coils",
+      "#coil",
+      "# coil",
+      "# of coils",
+      "Coil number"
+    ],
+    "main_symbol": "",
+    "symbols": [],
+    "units": []
+  },
+  "Number Of Phase": {
+    "synonyms": [
+      "# phase",
+      "#phase",
+      "#phases",
+      "# phases",
+      "# of phases",
+      "Phase number"
+    ],
+    "main_symbol": "",
+    "symbols": [],
+    "units": []
+  },
+  "Number Of Pole Pairs": {
+    "synonyms": [
+      "number pole pairs",
+      "pole pairs",
+      "# pole pair",
+      "#pole pair",
+      "# pole pairs",
+      "#pole pairs",
+      "# of pole pairs",
+      "Pole pair number"
+    ],
+    "main_symbol": "",
+    "symbols": [],
+    "units": []
+  },
+  "Number Of Poles": {
+    "synonyms": [
+      "number poles",
+      "# poles",
+      "#poles",
+      "# of poles",
+      "Pole number"
+    ],
+    "main_symbol": "",
+    "symbols": [],
+    "units": []
+  },
+  "Number Of Rotor": {
+    "synonyms": [
+      "# rotor",
+      "#rotor",
+      "# rotors",
+      "#rotors",
+      "# of rotors",
+      "Rotor number"
+    ],
+    "main_symbol": "",
+    "symbols": [],
+    "units": []
+  },
+  "Number Of Stator": {
+    "synonyms": [
+      "# stator",
+      "#stator",
+      "# stators",
+      "#stators",
+      "# of stators",
+      "Stator number"
+    ],
+    "main_symbol": "",
+    "symbols": [],
+    "units": []
+  },
+  "Number Of Turns": {
+    "synonyms": [
+      "# turn",
+      "#turn",
+      "# turns",
+      "#turns",
+      "# of turns",
+      "Turn number"
+    ],
+    "main_symbol": "",
+    "symbols": [],
+    "units": []
+  },
+  "Phase Resistance": {
+    "synonyms": [
+      "AC resistance"
+    ],
+    "main_symbol": "\u03a9",
+    "symbols": [
+      "\u03a9",
+      "c\u03a9",
+      "da\u03a9",
+      "d\u03a9",
+      "G\u03a9",
+      "\u03bc\u03a9",
+      "m\u03a9",
+      "n\u03a9"
+    ],
+    "units": [
+      "ohm",
+      "ohm",
+      "centiohm",
+      "decaohm",
+      "deciohm",
+      "gigaohm",
+      "kiloohm",
+      "megaohm",
+      "microohm",
+      "milliohm",
+      "nanoohm"
+    ]
+  },
+  "Pm Thickness": {
+    "synonyms": [
+      "magnet thickness",
+      "magnet's thickness"
+    ],
+    "main_symbol": "mm",
+    "symbols": [
+      "cm",
+      "m",
+      "dam",
+      "dm",
+      "km",
+      "\u03bcm",
+      "mm",
+      "nm"
+    ],
+    "units": [
+      "millimetre",
+      "centimetre",
+      "metre",
+      "decametre",
+      "decimetre",
+      "kilometre",
+      "micrometre",
+      "millimetre",
+      "nanometre"
+    ]
+  },
+  "Rated Power": {
+    "synonyms": [
+      "Rating Power",
+      "Power rating",
+      "rated continuous power",
+      "rated output power",
+      "nominal power"
+    ],
+    "main_symbol": "kW",
+    "symbols": [
+      "W",
+      "cW",
+      "daW",
+      "dW",
+      "GW",
+      "kW",
+      "MW",
+      "\u03bcW",
+      "mW",
+      "nW"
+    ],
+    "units": [
+      "kilowatt",
+      "watt",
+      "centiwatt",
+      "decawatt",
+      "deciwatt",
+      "gigawatt",
+      "kilowatt",
+      "megawatt",
+      "microwatt",
+      "milliwatt",
+      "nanowatt"
+    ]
+  },
+  "Rated Speed": {
+    "synonyms": [
+      "Rating Speed",
+      "Speed rating",
+      "rated continuous speed",
+      "rated output speed",
+      "nominal speed",
+      "rated rotational speed"
+    ],
+    "main_symbol": "rpm",
+    "symbols": [
+      "min^-1",
+      "rpm",
+      "krpm"
+    ],
+    "units": [
+      "rpm",
+      "min^-1",
+      "rpm",
+      "krpm"
+    ]
+  },
+  "Rotor Length": {
+    "synonyms": [],
+    "main_symbol": "mm",
+    "symbols": [
+      "cm",
+      "m",
+      "dam",
+      "dm",
+      "km",
+      "\u03bcm",
+      "mm",
+      "nm"
+    ],
+    "units": [
+      "millimetre",
+      "centimetre",
+      "metre",
+      "decametre",
+      "decimetre",
+      "kilometre",
+      "micrometre",
+      "millimetre",
+      "nanometre"
+    ]
+  },
+  "Rotor Outer Diameter": {
+    "synonyms": [
+      "Outer diameter of rotor",
+      "rotor outer radius",
+      "rotor outer radii",
+      "outer radius of rotor",
+      "outer radii of rotor",
+      "Rotor OD"
+    ],
+    "main_symbol": "mm",
+    "symbols": [
+      "cm",
+      "m",
+      "dam",
+      "dm",
+      "km",
+      "\u03bcm",
+      "mm",
+      "nm"
+    ],
+    "units": [
+      "millimetre",
+      "centimetre",
+      "metre",
+      "decametre",
+      "decimetre",
+      "kilometre",
+      "micrometre",
+      "millimetre",
+      "nanometre"
+    ]
+  },
+  "Rotor Speed": {
+    "synonyms": [],
+    "main_symbol": "rpm",
+    "symbols": [
+      "rpm"
+    ],
+    "units": [
+      "rpm",
+      "rpm"
+    ]
+  },
+  "Specific Power": {
+    "synonyms": [],
+    "main_symbol": "kW/kg",
+    "symbols": [
+      "kW/kg",
+      "W/kg"
+    ],
+    "units": [
+      "kW/kg",
+      "kW/kg",
+      "W/kg"
+    ]
+  },
+  "Stator Inner Diameter": {
+    "synonyms": [
+      "Inner diameter of stator",
+      "stator inner radius",
+      "stator inner radii",
+      "inner radius of stator",
+      "inner radii of stator",
+      "Stator ID"
+    ],
+    "main_symbol": "mm",
+    "symbols": [
+      "cm",
+      "m",
+      "dam",
+      "dm",
+      "km",
+      "\u03bcm",
+      "mm",
+      "nm"
+    ],
+    "units": [
+      "millimetre",
+      "centimetre",
+      "metre",
+      "decametre",
+      "decimetre",
+      "kilometre",
+      "micrometre",
+      "millimetre",
+      "nanometre"
+    ]
+  },
+  "Stator Length": {
+    "synonyms": [],
+    "main_symbol": "mm",
+    "symbols": [
+      "cm",
+      "m",
+      "dam",
+      "dm",
+      "km",
+      "\u03bcm",
+      "mm",
+      "nm"
+    ],
+    "units": [
+      "millimetre",
+      "centimetre",
+      "metre",
+      "decametre",
+      "decimetre",
+      "kilometre",
+      "micrometre",
+      "millimetre",
+      "nanometre"
+    ]
+  },
+  "Stator Outer Diameter": {
+    "synonyms": [
+      "Outer diameter of stator",
+      "stator outer radius",
+      "stator outer radii",
+      "outer radius of stator",
+      "outer radii of stator",
+      "Stator OD"
+    ],
+    "main_symbol": "mm",
+    "symbols": [
+      "cm",
+      "m",
+      "dam",
+      "dm",
+      "km",
+      "\u03bcm",
+      "mm",
+      "nm"
+    ],
+    "units": [
+      "millimetre",
+      "centimetre",
+      "metre",
+      "decametre",
+      "decimetre",
+      "kilometre",
+      "micrometre",
+      "millimetre",
+      "nanometre"
+    ]
+  },
+  "Total Losses": {
+    "synonyms": [
+      "total loss"
+    ],
+    "main_symbol": "kW",
+    "symbols": [
+      "W",
+      "cW",
+      "daW",
+      "dW",
+      "GW",
+      "kW",
+      "MW",
+      "\u03bcW",
+      "mW",
+      "nW"
+    ],
+    "units": [
+      "kilowatt",
+      "watt",
+      "centiwatt",
+      "decawatt",
+      "deciwatt",
+      "gigawatt",
+      "kilowatt",
+      "megawatt",
+      "microwatt",
+      "milliwatt",
+      "nanowatt"
+    ]
+  }
+}

@@ -1,0 +1,839 @@
+@prefix : <http://ontology.dlr.de/spacecraft-parts/core#> .
+@prefix base: <http://ontology.dlr.de/spacecraft-parts/base#> .
+@prefix ns1: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://ontology.dlr.de/spacecraft-parts/core> a owl:Ontology ;
+    rdfs:label "Spacecraft Part Core Ontology"@en .
+
+:Acceleration a owl:Class ;
+    rdfs:label "acceleration" ;
+    schema1:about "https://en.wikipedia.org/wiki/Acceleration" ;
+    ns1:PrefixedUnit "metre per nanosecond time squared",
+        "micrometre per second time squared",
+        "millimetre per second time squared",
+        "nanometre per second time squared" ;
+    ns1:Unit "metre per second time squared" ;
+    ns1:alternativeSymbol "m / s2" ;
+    ns1:symbol "m / ns2",
+        "mm / s2",
+        "nm / s2" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q11376>,
+        <https://www.wikidata.org/entity/Q26711932>,
+        <https://www.wikidata.org/entity/Q602358>,
+        <https://www.wikidata.org/entity/Q90137277> ;
+    rdfs:subClassOf base:C006,
+        <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q2672914>,
+        <https://www.wikidata.org/entity/Q30337763> .
+
+:AcquisitionTime a owl:Class ;
+    rdfs:label "acquisition time" ;
+    schema1:about "https://en.wikipedia.org/wiki/Time" ;
+    ns1:PrefixedUnit "microsecond",
+        "millisecond",
+        "ms",
+        "nanosecond",
+        "ns",
+        "us" ;
+    ns1:Unit "h",
+        "hour",
+        "min",
+        "minute",
+        "s",
+        "second" ;
+    ns1:alternativeSymbol "h",
+        "min",
+        "s" ;
+    ns1:symbol "ms",
+        "ns",
+        "us" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q11471>,
+        <https://www.wikidata.org/entity/Q16038819>,
+        <https://www.wikidata.org/entity/Q2041543>,
+        <https://www.wikidata.org/entity/Q2199864>,
+        <https://www.wikidata.org/entity/Q26711932>,
+        <https://www.wikidata.org/entity/Q602358>,
+        <https://www.wikidata.org/entity/Q68977959>,
+        <https://www.wikidata.org/entity/Q90137277> ;
+    rdfs:member <https://www.wikidata.org/entity/Q133327> ;
+    rdfs:subClassOf base:C006,
+        <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q181175>,
+        <https://www.wikidata.org/entity/Q192276>,
+        <https://www.wikidata.org/entity/Q20937557>,
+        <https://www.wikidata.org/entity/Q30337748>,
+        <https://www.wikidata.org/entity/Q3054889> ;
+    rdfs:type <https://www.wikidata.org/entity/Q1207505>,
+        <https://www.wikidata.org/entity/Q192276>,
+        <https://www.wikidata.org/entity/Q35120> ;
+    skos:altLabel "aquisition" .
+
+:Altitude a owl:Class ;
+    rdfs:label "altitude" ;
+    schema1:about "https://en.wikipedia.org/wiki/Altimeter",
+        "https://en.wikipedia.org/wiki/Altitude",
+        "https://en.wikipedia.org/wiki/Altitude_(geometry)" ;
+    ns1:PrefixedUnit "centimetre",
+        "decimetre",
+        "kilometre",
+        "micrometre",
+        "millimetre",
+        "nanometre" ;
+    ns1:Unit "metre" ;
+    ns1:alternativeSymbol "m" ;
+    ns1:symbol "cm",
+        "dm",
+        "km",
+        "mm",
+        "nm" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q10623719>,
+        <https://www.wikidata.org/entity/Q190200>,
+        <https://www.wikidata.org/entity/Q20078551>,
+        <https://www.wikidata.org/entity/Q2041543>,
+        <https://www.wikidata.org/entity/Q216197> ;
+    rdfs:subClassOf base:C005,
+        <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q208826>,
+        <https://www.wikidata.org/entity/Q2319609>,
+        <https://www.wikidata.org/entity/Q3743695> ;
+    rdfs:type <https://www.wikidata.org/entity/Q1434112> ;
+    skos:altLabel "altimeter",
+        "altimeters",
+        "altitude meter",
+        "elevation" .
+
+:Bandwidth a owl:Class ;
+    rdfs:label "bandwidth" ;
+    schema1:about "https://en.wikipedia.org/wiki/Bandwidth_(computing)",
+        "https://en.wikipedia.org/wiki/Bandwidth_(signal_processing)",
+        "https://en.wikipedia.org/wiki/Bit_rate" ;
+    ns1:PrefixedUnit "centihertz",
+        "decahertz",
+        "decihertz",
+        "kilohertz",
+        "megahertz",
+        "microhertz",
+        "millihertz",
+        "nanohertz" ;
+    ns1:Unit "hertz" ;
+    ns1:alternativeSymbol "hz" ;
+    ns1:symbol "chz",
+        "dahz",
+        "dhz",
+        "khz",
+        "mhz",
+        "nhz" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q1576430>,
+        <https://www.wikidata.org/entity/Q194158>,
+        <https://www.wikidata.org/entity/Q249998> ;
+    rdfs:subClassOf base:C005,
+        <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q1144560>,
+        <https://www.wikidata.org/entity/Q185148> ;
+    rdfs:type <https://www.wikidata.org/entity/Q17362920>,
+        <https://www.wikidata.org/entity/Q7692348> ;
+    skos:altLabel "analog bandwidth",
+        "band width" .
+
+:Diameter a owl:Class ;
+    rdfs:label "diameter" ;
+    schema1:about "https://en.wikipedia.org/wiki/Diameter" ;
+    ns1:PrefixedUnit "centimetre",
+        "decimetre",
+        "kilometre",
+        "micrometre",
+        "millimetre",
+        "nanometre" ;
+    ns1:Unit "metre" ;
+    ns1:alternativeSymbol "m" ;
+    ns1:symbol "cm",
+        "dm",
+        "km",
+        "mm",
+        "nm" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q1208648>,
+        <https://www.wikidata.org/entity/Q1664689>,
+        <https://www.wikidata.org/entity/Q19180675>,
+        <https://www.wikidata.org/entity/Q1970746>,
+        <https://www.wikidata.org/entity/Q216601>,
+        <https://www.wikidata.org/entity/Q26711932>,
+        <https://www.wikidata.org/entity/Q37221>,
+        <https://www.wikidata.org/entity/Q602358>,
+        <https://www.wikidata.org/entity/Q90137277> ;
+    rdfs:subClassOf :SpatialDimension,
+        <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q1196827>,
+        <https://www.wikidata.org/entity/Q12453>,
+        <https://www.wikidata.org/entity/Q166154>,
+        <https://www.wikidata.org/entity/Q286583>,
+        <https://www.wikidata.org/entity/Q36253>,
+        <https://www.wikidata.org/entity/Q430140>,
+        <https://www.wikidata.org/entity/Q488383> ;
+    rdfs:type <https://www.wikidata.org/entity/Q15836568>,
+        <https://www.wikidata.org/entity/Q4825885>,
+        <https://www.wikidata.org/entity/Q96251598> .
+
+:Dimension a owl:Class ;
+    rdfs:label "dimension" ;
+    schema1:about "https://en.wikipedia.org/wiki/Dimension",
+        "https://en.wikipedia.org/wiki/Dimension_(metadata)",
+        "https://en.wikipedia.org/wiki/Order_dimension",
+        "https://en.wikipedia.org/wiki/Volume" ;
+    ns1:PrefixedUnit "centimetre",
+        "decimetre",
+        "kilometre",
+        "micrometre",
+        "millimetre",
+        "nanometre" ;
+    ns1:Unit "metre" ;
+    ns1:alternativeSymbol "m" ;
+    ns1:symbol "cm",
+        "dm",
+        "km",
+        "mm",
+        "nm" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q11190003>,
+        <https://www.wikidata.org/entity/Q19180675>,
+        <https://www.wikidata.org/entity/Q19190511>,
+        <https://www.wikidata.org/entity/Q2657718>,
+        <https://www.wikidata.org/entity/Q26711932>,
+        <https://www.wikidata.org/entity/Q39297>,
+        <https://www.wikidata.org/entity/Q4440864>,
+        <https://www.wikidata.org/entity/Q4449270>,
+        <https://www.wikidata.org/entity/Q5277245>,
+        <https://www.wikidata.org/entity/Q602358>,
+        <https://www.wikidata.org/entity/Q7100431>,
+        <https://www.wikidata.org/entity/Q90137277> ;
+    rdfs:subClassOf base:C006,
+        base:C008,
+        <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q181175>,
+        <https://www.wikidata.org/entity/Q30337763>,
+        <https://www.wikidata.org/entity/Q3386703>,
+        <https://www.wikidata.org/entity/Q3924032>,
+        <https://www.wikidata.org/entity/Q4330556> ;
+    rdfs:type <https://www.wikidata.org/entity/Q188211>,
+        <https://www.wikidata.org/entity/Q4440864>,
+        <https://www.wikidata.org/entity/Q6671777>,
+        <https://www.wikidata.org/entity/Q7397> ;
+    skos:altLabel "dimensionality",
+        "dimensions",
+        "size" .
+
+:DryMass a owl:Class ;
+    rdfs:label "dry mass" ;
+    ns1:PrefixedUnit "kilogram",
+        "kilotonne",
+        "microgram",
+        "milligram",
+        "nanogram" ;
+    ns1:Unit "gram" ;
+    ns1:alternativeSymbol "g" ;
+    ns1:symbol "kg",
+        "kt",
+        "mg",
+        "ng" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q94633157> ;
+    rdfs:subClassOf :Mass,
+        <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q11423> ;
+    skos:altLabel "mass of dry matter" .
+
+:Frequency a owl:Class ;
+    rdfs:label "frequency" ;
+    schema1:about "https://en.wikipedia.org/wiki/Frequency" ;
+    ns1:PrefixedUnit "gigahertz",
+        "hectohertz",
+        "kilohertz",
+        "megahertz",
+        "microhertz",
+        "millihertz",
+        "nanohertz" ;
+    ns1:Unit "hertz" ;
+    ns1:alternativeSymbol "hz" ;
+    ns1:symbol "ghz",
+        "hhz",
+        "khz",
+        "mhz",
+        "nhz" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q11652>,
+        <https://www.wikidata.org/entity/Q1256787>,
+        <https://www.wikidata.org/entity/Q26711932>,
+        <https://www.wikidata.org/entity/Q26711937>,
+        <https://www.wikidata.org/entity/Q26711938>,
+        <https://www.wikidata.org/entity/Q90137277> ;
+    rdfs:subClassOf base:C006,
+        <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q181175>,
+        <https://www.wikidata.org/entity/Q30337763> ;
+    skos:altLabel "frequence",
+        "frequencies",
+        "frequencies & signals",
+        "frequencies and signals",
+        "temporal frequency" .
+
+:Grms a ns1:Unit ;
+    rdfs:label "Root-Mean-Square Acceleration"@en ;
+    ns1:symbol "Grms" .
+
+:Height a owl:Class ;
+    rdfs:label "height" ;
+    schema1:about "https://en.wikipedia.org/wiki/Height" ;
+    ns1:PrefixedUnit "centimetre",
+        "decimetre",
+        "kilometre",
+        "micrometre",
+        "millimetre",
+        "nanometre" ;
+    ns1:Unit "metre" ;
+    ns1:alternativeSymbol "m" ;
+    ns1:symbol "cm",
+        "dm",
+        "km",
+        "mm",
+        "nm" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q208826>,
+        <https://www.wikidata.org/entity/Q2550215>,
+        <https://www.wikidata.org/entity/Q26711932>,
+        <https://www.wikidata.org/entity/Q2687757>,
+        <https://www.wikidata.org/entity/Q496818>,
+        <https://www.wikidata.org/entity/Q5699059>,
+        <https://www.wikidata.org/entity/Q90137277> ;
+    rdfs:subClassOf :SpatialDimension,
+        <https://www.wikidata.org/entity/Q36253>,
+        <https://www.wikidata.org/entity/Q73454785> ;
+    rdfs:type <https://www.wikidata.org/entity/Q192276>,
+        <https://www.wikidata.org/entity/Q7942315> ;
+    skos:altLabel "heights" .
+
+:Length a owl:Class ;
+    rdfs:label "length" ;
+    schema1:about "https://en.wikipedia.org/wiki/Length" ;
+    ns1:PrefixedUnit "centimetre",
+        "decimetre",
+        "kilometre",
+        "micrometre",
+        "millimetre",
+        "nanometre" ;
+    ns1:Unit "metre" ;
+    ns1:alternativeSymbol "m" ;
+    ns1:symbol "cm",
+        "dm",
+        "km",
+        "mm",
+        "nm" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q1761084>,
+        <https://www.wikidata.org/entity/Q26711932>,
+        <https://www.wikidata.org/entity/Q3250078>,
+        <https://www.wikidata.org/entity/Q3412962>,
+        <https://www.wikidata.org/entity/Q36253>,
+        <https://www.wikidata.org/entity/Q68977959>,
+        <https://www.wikidata.org/entity/Q90137277>,
+        <https://www.wikidata.org/entity/Q930412> ;
+    rdfs:subClassOf :SpatialDimension,
+        <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q28733284>,
+        <https://www.wikidata.org/entity/Q30337748>,
+        <https://www.wikidata.org/entity/Q36253>,
+        <https://www.wikidata.org/entity/Q4440864> ;
+    skos:altLabel "depth" .
+
+:Lifetime a owl:Class ;
+    rdfs:label "lifetime" ;
+    schema1:description "duration of life for an organism" ;
+    ns1:Unit "year",
+        "years" ;
+    ns1:alternativeSymbol "a",
+        "years" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q16688681>,
+        <https://www.wikidata.org/entity/Q22675021> ;
+    rdfs:subClassOf base:C006,
+        base:C008,
+        <https://www.wikidata.org/entity/Q2199864> ;
+    skos:altLabel "design lifetime",
+        "expected life",
+        "life",
+        "life - time",
+        "life duration",
+        "life span",
+        "lifespan",
+        "mission life" .
+
+:MechanicalVibration a owl:Class ;
+    rdfs:label "mechanical vibration" ;
+    schema1:about "https://en.wikipedia.org/wiki/Vibration" ;
+    ns1:Unit "grms" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q19180675>,
+        <https://www.wikidata.org/entity/Q1970746>,
+        <https://www.wikidata.org/entity/Q20078554>,
+        <https://www.wikidata.org/entity/Q26373241>,
+        <https://www.wikidata.org/entity/Q3695508>,
+        <https://www.wikidata.org/entity/Q4114391>,
+        <https://www.wikidata.org/entity/Q602358> ;
+    rdfs:subClassOf base:C006,
+        <https://www.wikidata.org/entity/Q170475> ;
+    rdfs:type <https://www.wikidata.org/entity/Q1980247> ;
+    skos:altLabel "oscillation",
+        "vibration",
+        "vibrations" .
+
+:OperatingShock a owl:Class ;
+    rdfs:label "operating shock" ;
+    schema1:about "https://en.wikipedia.org/wiki/Shock_(mechanics)" ;
+    ns1:Unit "grms" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q129302>,
+        <https://www.wikidata.org/entity/Q178061>,
+        <https://www.wikidata.org/entity/Q2657718>,
+        <https://www.wikidata.org/entity/Q488732> ;
+    rdfs:subClassOf :Shock,
+        <https://www.wikidata.org/entity/Q1150070>,
+        <https://www.wikidata.org/entity/Q483247>,
+        <https://www.wikidata.org/entity/Q5121708>,
+        <https://www.wikidata.org/entity/Q6725147> ;
+    rdfs:type <https://www.wikidata.org/entity/Q179630> ;
+    skos:altLabel "circulatory shock",
+        "mechanical shock",
+        "shock",
+        "shock ( circulatory )" .
+
+:OperatingTemperature a owl:Class ;
+    rdfs:label "operating temperature" ;
+    schema1:about "https://en.wikipedia.org/wiki/Operating_temperature" ;
+    ns1:Unit "degree celsius" ;
+    ns1:alternativeSymbol "degc" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q656685> ;
+    rdfs:subClassOf :Temperature ;
+    rdfs:type <https://www.wikidata.org/entity/Q52008186> ;
+    skos:altLabel "full performance temperature",
+        "operating range temperature",
+        "operating temp range",
+        "operating temp.range",
+        "operating temperature range",
+        "operation temp",
+        "operation temperature range",
+        "operational range",
+        "switch - on temperature",
+        "temperature operating",
+        "temperature range operation",
+        "temperature range operational",
+        "thermal operational",
+        "thermal operational range",
+        "tvac operational" .
+
+:OutputCurrent a owl:Class ;
+    rdfs:label "output current" ;
+    ns1:PrefixedUnit "gigaampere",
+        "hectoampere",
+        "kiloampere",
+        "megaampere",
+        "microampere",
+        "milliampere",
+        "nanoampere" ;
+    ns1:Unit "ampere" ;
+    ns1:alternativeSymbol "a" ;
+    ns1:symbol "ga",
+        "ha",
+        "ka",
+        "ma",
+        "na" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q62665754> ;
+    rdfs:subClassOf :PowerDissipation ;
+    rdfs:type <https://www.wikidata.org/entity/Q13442814> ;
+    skos:altLabel "outputs analog current",
+        "power output maximum current" .
+
+:OutputVoltage a owl:Class ;
+    rdfs:label "output voltage" ;
+    ns1:PrefixedUnit "gigavolt",
+        "hectovolt",
+        "kilovolt",
+        "megavolt",
+        "microvolt",
+        "millivolt",
+        "nanovolt" ;
+    ns1:Unit "volt" ;
+    ns1:alternativeSymbol "v" ;
+    ns1:symbol "gv",
+        "hv",
+        "kv",
+        "mv",
+        "nv" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q12874724>,
+        <https://www.wikidata.org/entity/Q21540797>,
+        <https://www.wikidata.org/entity/Q3563040>,
+        <https://www.wikidata.org/entity/Q3563264>,
+        <https://www.wikidata.org/entity/Q57296401>,
+        <https://www.wikidata.org/entity/Q782179> ;
+    rdfs:subClassOf :PowerDissipation ;
+    rdfs:type <https://www.wikidata.org/entity/Q41710>,
+        <https://www.wikidata.org/entity/Q486972>,
+        <https://www.wikidata.org/entity/Q5>,
+        <https://www.wikidata.org/entity/Q532> ;
+    skos:altLabel "analog output voltage",
+        "output analog voltage",
+        "outputs analog voltage",
+        "vout" .
+
+:Price a owl:Class ;
+    rdfs:label "price" ;
+    schema1:about "https://en.wikipedia.org/wiki/Price",
+        "https://en.wikipedia.org/wiki/Price_(Sussex_cricketer)" ;
+    ns1:Unit "$",
+        "chinese yuan",
+        "eur",
+        "euro",
+        "pound sterling",
+        "ps",
+        "united states dollar",
+        "y =" ;
+    ns1:alternativeSymbol "$",
+        "eur",
+        "ps",
+        "y =" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q160151>,
+        <https://www.wikidata.org/entity/Q2657718>,
+        <https://www.wikidata.org/entity/Q7242564> ;
+    rdfs:subClassOf base:C006,
+        <https://www.wikidata.org/entity/Q1499548>,
+        <https://www.wikidata.org/entity/Q30242023>,
+        <https://www.wikidata.org/entity/Q39875001> ;
+    rdfs:type <https://www.wikidata.org/entity/Q5>,
+        <https://www.wikidata.org/entity/Q7184903> .
+
+:Resolution a owl:Class ;
+    rdfs:label "resolution" ;
+    schema1:about "https://en.wikipedia.org/wiki/Image_resolution",
+        "https://en.wikipedia.org/wiki/Resolution_(law)" ;
+    ns1:Unit "pixel",
+        "px" ;
+    ns1:alternativeSymbol "px" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q12049995>,
+        <https://www.wikidata.org/entity/Q210521>,
+        <https://www.wikidata.org/entity/Q2751586>,
+        <https://www.wikidata.org/entity/Q54314561> ;
+    rdfs:subClassOf base:C007,
+        <https://www.wikidata.org/entity/Q3937033>,
+        <https://www.wikidata.org/entity/Q452237>,
+        <https://www.wikidata.org/entity/Q47574>,
+        <https://www.wikidata.org/entity/Q49848> ;
+    rdfs:type <https://www.wikidata.org/entity/Q4373292>,
+        <https://www.wikidata.org/entity/Q47574>,
+        <https://www.wikidata.org/entity/Q937228> ;
+    skos:altLabel "image resolution",
+        "pixel count" .
+
+:SNR a owl:Class ;
+    rdfs:label "snr" ;
+    schema1:about "https://en.wikipedia.org/wiki/PRPF4" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q18033852>,
+        <https://www.wikidata.org/entity/Q29723316> ;
+    rdfs:subClassOf base:C006,
+        <https://www.wikidata.org/entity/Q20747295> ;
+    rdfs:type <https://www.wikidata.org/entity/Q7187> ;
+    skos:altLabel "signal - to - noise ratio",
+        "snr - 1",
+        "snr1" .
+
+:StorageTemperature a owl:Class ;
+    rdfs:label "storage temperature" ;
+    ns1:Unit "degree celsius" ;
+    ns1:alternativeSymbol "degc" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q66343162> ;
+    rdfs:subClassOf :Temperature ;
+    rdfs:type <https://www.wikidata.org/entity/Q30612> ;
+    skos:altLabel "storage temperature range",
+        "storing temperature",
+        "temperature storage" .
+
+:SupplyCurrent a owl:Class ;
+    rdfs:label "supply current" ;
+    schema1:about "https://en.wikipedia.org/wiki/Electric_current" ;
+    ns1:PrefixedUnit "gigaampere",
+        "hectoampere",
+        "kiloampere",
+        "megaampere",
+        "microampere",
+        "milliampere",
+        "nanoampere" ;
+    ns1:Unit "ampere" ;
+    ns1:alternativeSymbol "a" ;
+    ns1:symbol "ga",
+        "ha",
+        "ka",
+        "ma",
+        "na" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q11651>,
+        <https://www.wikidata.org/entity/Q28195494> ;
+    rdfs:subClassOf :PowerConsumption,
+        <https://www.wikidata.org/entity/Q186247>,
+        <https://www.wikidata.org/entity/Q56298508>,
+        <https://www.wikidata.org/entity/Q79782> ;
+    rdfs:type <https://www.wikidata.org/entity/Q3249551> ;
+    skos:altLabel "current consumption",
+        "dc input current",
+        "electric current",
+        "electrical current",
+        "input current" .
+
+:SupplyVoltage a owl:Class ;
+    rdfs:label "supply voltage" ;
+    schema1:about "https://en.wikipedia.org/wiki/Ground_(electricity)",
+        "https://en.wikipedia.org/wiki/Supply_voltage_supervisor",
+        "https://en.wikipedia.org/wiki/Voltage" ;
+    ns1:PrefixedUnit "gigavolt",
+        "hectovolt",
+        "kilovolt",
+        "megavolt",
+        "microvolt",
+        "millivolt",
+        "nanovolt" ;
+    ns1:Unit "volt" ;
+    ns1:alternativeSymbol "v" ;
+    ns1:symbol "gv",
+        "hv",
+        "kv",
+        "mv",
+        "nv" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q25428>,
+        <https://www.wikidata.org/entity/Q26711936>,
+        <https://www.wikidata.org/entity/Q390700>,
+        <https://www.wikidata.org/entity/Q6501125>,
+        <https://www.wikidata.org/entity/Q7644552>,
+        <https://www.wikidata.org/entity/Q77597807> ;
+    rdfs:member <https://www.wikidata.org/entity/Q132629> ;
+    rdfs:subClassOf :PowerConsumption,
+        <https://www.wikidata.org/entity/Q181175>,
+        <https://www.wikidata.org/entity/Q25428>,
+        <https://www.wikidata.org/entity/Q29896155>,
+        <https://www.wikidata.org/entity/Q7295721>,
+        <https://www.wikidata.org/entity/Q80831> ;
+    rdfs:type <https://www.wikidata.org/entity/Q23008367> ;
+    skos:altLabel "dc range voltage",
+        "dc supply voltage",
+        "dc voltage",
+        "input voltage",
+        "input voltage range",
+        "nominal voltage",
+        "operating voltage",
+        "supply voltage range",
+        "supply voltage supervisory circuit",
+        "voltage reference" .
+
+:SurvivalTemperature a owl:Class ;
+    rdfs:label "survival temperature" ;
+    schema1:about "https://en.wikipedia.org/wiki/Temperature",
+        "https://en.wikipedia.org/wiki/Thermodynamic_temperature" ;
+    ns1:Unit "degree celsius" ;
+    ns1:alternativeSymbol "degc" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q11466>,
+        <https://www.wikidata.org/entity/Q264647>,
+        <https://www.wikidata.org/entity/Q26711934>,
+        <https://www.wikidata.org/entity/Q68977959>,
+        <https://www.wikidata.org/entity/Q92157468> ;
+    rdfs:subClassOf :Temperature,
+        <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q11466>,
+        <https://www.wikidata.org/entity/Q181175>,
+        <https://www.wikidata.org/entity/Q30337748>,
+        <https://www.wikidata.org/entity/Q3387041> ;
+    rdfs:type <https://www.wikidata.org/entity/Q230937> ;
+    skos:altLabel "absolute temperature",
+        "survivable temperature range",
+        "thermodynamic temperature",
+        "tvac survival" .
+
+:UpdateRate a owl:Class ;
+    rdfs:label "update rate" ;
+    schema1:about "https://en.wikipedia.org/wiki/Rate_(mathematics)" ;
+    ns1:PrefixedUnit "gigahertz",
+        "hectohertz",
+        "kilohertz",
+        "megahertz",
+        "microhertz",
+        "millihertz",
+        "nanohertz" ;
+    ns1:Unit "hertz" ;
+    ns1:alternativeSymbol "hz" ;
+    ns1:symbol "ghz",
+        "hhz",
+        "khz",
+        "mhz",
+        "nhz" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q11241407>,
+        <https://www.wikidata.org/entity/Q1144560>,
+        <https://www.wikidata.org/entity/Q15955936>,
+        <https://www.wikidata.org/entity/Q16169047>,
+        <https://www.wikidata.org/entity/Q19180675>,
+        <https://www.wikidata.org/entity/Q2657718>,
+        <https://www.wikidata.org/entity/Q590208>,
+        <https://www.wikidata.org/entity/Q602358>,
+        <https://www.wikidata.org/entity/Q736288>,
+        <https://www.wikidata.org/entity/Q7737966>,
+        <https://www.wikidata.org/entity/Q875076> ;
+    rdfs:subClassOf base:C006,
+        <https://www.wikidata.org/entity/Q1207505>,
+        <https://www.wikidata.org/entity/Q160151>,
+        <https://www.wikidata.org/entity/Q203066>,
+        <https://www.wikidata.org/entity/Q29175>,
+        <https://www.wikidata.org/entity/Q8161> ;
+    rdfs:type <https://www.wikidata.org/entity/Q5> ;
+    skos:altLabel "pace",
+        "process rate",
+        "rate of process" .
+
+:WetMass a owl:Class ;
+    rdfs:label "wet mass" ;
+    schema1:about "https://en.wikipedia.org/wiki/Mass" ;
+    ns1:PrefixedUnit "kilogram",
+        "kilotonne",
+        "microgram",
+        "milligram",
+        "nanogram" ;
+    ns1:Unit "gram" ;
+    ns1:alternativeSymbol "g" ;
+    ns1:symbol "kg",
+        "kt",
+        "mg",
+        "ng" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q11423>,
+        <https://www.wikidata.org/entity/Q2657718>,
+        <https://www.wikidata.org/entity/Q26711933>,
+        <https://www.wikidata.org/entity/Q65088317>,
+        <https://www.wikidata.org/entity/Q68977959>,
+        <https://www.wikidata.org/entity/Q73391977> ;
+    rdfs:member <https://www.wikidata.org/entity/Q11402>,
+        <https://www.wikidata.org/entity/Q35875> ;
+    rdfs:subClassOf :Mass,
+        <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q223557>,
+        <https://www.wikidata.org/entity/Q30337748>,
+        <https://www.wikidata.org/entity/Q3386703>,
+        <https://www.wikidata.org/entity/Q39546> ;
+    rdfs:type <https://www.wikidata.org/entity/Q28733284> ;
+    skos:altLabel "net weight" .
+
+:Width a owl:Class ;
+    rdfs:label "width" ;
+    schema1:description "horizontal dimension of an entity" ;
+    ns1:PrefixedUnit "centimetre",
+        "decimetre",
+        "kilometre",
+        "micrometre",
+        "millimetre",
+        "nanometre" ;
+    ns1:Unit "metre" ;
+    ns1:alternativeSymbol "m" ;
+    ns1:symbol "cm",
+        "dm",
+        "km",
+        "mm",
+        "nm" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q35059>,
+        <https://www.wikidata.org/entity/Q77835705>,
+        <https://www.wikidata.org/entity/Q90137277> ;
+    rdfs:subClassOf :SpatialDimension,
+        <https://www.wikidata.org/entity/Q36253> ;
+    skos:altLabel "breadth" .
+
+:PowerConsumption a owl:Class ;
+    rdfs:label "power consumption" ;
+    schema1:about "https://en.wikipedia.org/wiki/Electric_energy_consumption",
+        "https://en.wikipedia.org/wiki/Power_supply",
+        "https://en.wikipedia.org/wiki/Power_supply_unit_(computer)" ;
+    ns1:PrefixedUnit "gigawatt",
+        "hectowatt",
+        "kilowatt",
+        "megawatt",
+        "microwatt",
+        "milliwatt",
+        "nanowatt" ;
+    ns1:Unit "watt" ;
+    ns1:alternativeSymbol "w" ;
+    ns1:symbol "gw",
+        "hw",
+        "kw",
+        "mw",
+        "nw" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q12204>,
+        <https://www.wikidata.org/entity/Q1482413>,
+        <https://www.wikidata.org/entity/Q16967551>,
+        <https://www.wikidata.org/entity/Q1753139>,
+        <https://www.wikidata.org/entity/Q192270>,
+        <https://www.wikidata.org/entity/Q204157>,
+        <https://www.wikidata.org/entity/Q2657718>,
+        <https://www.wikidata.org/entity/Q28754054>,
+        <https://www.wikidata.org/entity/Q29954>,
+        <https://www.wikidata.org/entity/Q3972>,
+        <https://www.wikidata.org/entity/Q5164762> ;
+    rdfs:member <https://www.wikidata.org/entity/Q56155>,
+        <https://www.wikidata.org/entity/Q64729893> ;
+    rdfs:subClassOf base:C005,
+        <https://www.wikidata.org/entity/Q1183543>,
+        <https://www.wikidata.org/entity/Q1369832>,
+        <https://www.wikidata.org/entity/Q16869822>,
+        <https://www.wikidata.org/entity/Q18123741>,
+        <https://www.wikidata.org/entity/Q18553247>,
+        <https://www.wikidata.org/entity/Q205663>,
+        <https://www.wikidata.org/entity/Q23925486>,
+        <https://www.wikidata.org/entity/Q3771881>,
+        <https://www.wikidata.org/entity/Q3966>,
+        <https://www.wikidata.org/entity/Q4293079>,
+        <https://www.wikidata.org/entity/Q4576564>,
+        <https://www.wikidata.org/entity/Q506680>,
+        <https://www.wikidata.org/entity/Q587008> ;
+    rdfs:type <https://www.wikidata.org/entity/Q12136>,
+        <https://www.wikidata.org/entity/Q169930>,
+        <https://www.wikidata.org/entity/Q314676>,
+        <https://www.wikidata.org/entity/Q33104129>,
+        <https://www.wikidata.org/entity/Q506680> ;
+    skos:altLabel "atx",
+        "atx power supply",
+        "computer power supply",
+        "computer power supply units",
+        "computer psu",
+        "dc power",
+        "dc power consumption",
+        "electric energy consumption",
+        "electrical consumption",
+        "energy consumption of electricity",
+        "input operating power",
+        "input power",
+        "pc power supply unit",
+        "power supplies",
+        "power supply",
+        "power supply rejection ratio",
+        "power supply unit",
+        "psu",
+        "supply power" .
+
+:PowerDissipation a owl:Class ;
+    rdfs:label "power dissipation" ;
+    schema1:about "https://en.wikipedia.org/wiki/CPU_power_dissipation" ;
+    ns1:PrefixedUnit "gigawatt",
+        "hectowatt",
+        "kilowatt",
+        "megawatt",
+        "microwatt",
+        "milliwatt",
+        "nanowatt" ;
+    ns1:Unit "watt" ;
+    ns1:alternativeSymbol "w" ;
+    ns1:symbol "gw",
+        "hw",
+        "kw",
+        "mw",
+        "nw" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q15790761> ;
+    rdfs:subClassOf base:C005,
+        <https://www.wikidata.org/entity/Q25342> ;
+    rdfs:type <https://www.wikidata.org/entity/Q11271324>,
+        <https://www.wikidata.org/entity/Q7692348> ;
+    skos:altLabel "central processing unit power dissipation",
+        "cpu power dissipation",
+        "power dissipation of the central processing unit",
+        "power dissipation of the cpu" .
+

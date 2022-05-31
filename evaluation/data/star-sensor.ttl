@@ -1,0 +1,200 @@
+@prefix : <http://ontology.dlr.de/spacecraft-parts/star-tracker#> .
+@prefix base: <http://ontology.dlr.de/spacecraft-parts/base#> .
+@prefix earth-sensor: <http://ontology.dlr.de/spacecraft-parts/earth-sensor> .
+@prefix gnss-receiver: <http://ontology.dlr.de/spacecraft-parts/gnss-receiver> .
+@prefix magnetic-torque: <http://ontology.dlr.de/spacecraft-parts/magnetic-torque> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sun-sensor: <http://ontology.dlr.de/spacecraft-parts/sun-sensor> .
+
+<http://ontology.dlr.de/spacecraft-parts/star-tracker> a owl:Ontology ;
+    rdfs:label "Spacecraft Part Star Tracker Ontology"@en ;
+    owl:imports <http://ontology.dlr.de/spacecraft-parts/base>,
+        <http://ontology.dlr.de/spacecraft-parts/core> .
+
+### FOR OM
+:degreePerSecond-Time rdf:type ns2:UnitDivision ;
+                      rdfs:label "degree per second"@en ;
+                      ns2:hasDimension ns2:angularSpeed-Dimension ;
+                      ns2:hasDenominator ns2:second-Time ;
+                      ns2:hasNumerator ns2:degree .
+
+:AttitudeKnowledgeError a owl:Class ;
+    rdfs:subClassOf base:C006 ;
+	ns2:Unit ns2:second-Angle,
+			ns2:minute-Angle,
+			"arcsec",
+			"arcmin",
+			"'",
+			"\"" ;
+	ns2:PrefixedUnit ns2:millisecond-Angle,
+					 ns2:microsecond-Angle,
+				     "arcms",
+				     "μas" .
+
+:FieldOfView a owl:Class ;
+    rdfs:subClassOf base:C007 ;
+    owl:equivalentClass earth-sensor:FieldOfView ;
+	ns2:Unit ns2:degree ;
+    skos:altLabel "FOV" .
+
+:FocalLength a owl:Class ;
+    ns2:PrefixedUnit ns2:centimetre,
+        ns2:decimetre,
+        ns2:kilometre,
+        ns2:micrometre,
+        ns2:millimetre,
+        ns2:nanometre ;
+    ns2:Unit ns2:foot,
+        ns2:inch,
+        ns2:metre,
+        ns2:mile,
+        ns2:yard,
+		"ft",
+		"'",
+		"''",
+		"yd" ;
+    rdfs:subClassOf base:C006 .
+
+:LensAperture a owl:Class ;
+    rdfs:subClassOf base:C006 ;
+	ns2:PrefixedUnit ns2:centimetre,
+        ns2:decimetre,
+        ns2:kilometre,
+        ns2:micrometre,
+        ns2:millimetre,
+        ns2:nanometre,
+        ns2:picometre ;
+    ns2:Unit ns2:foot,
+        ns2:inch,
+        ns2:metre,
+        ns2:mile,
+        ns2:yard,
+		"ft",
+		"'",
+		"''",
+		"yd" .
+
+:NumberOfStarsTracked a owl:Class ;
+    rdfs:subClassOf base:C006 ;
+    skos:altLabel "Number of Tracked Stars"^^rdfs:Literal .
+
+:Pressure a owl:Class ;
+    ns2:PrefixedUnit ns2:attopascal,
+        ns2:centimetreOfMercury,
+        ns2:centipascal,
+        ns2:decapascal,
+        ns2:decibar,
+        ns2:decipascal,
+        ns2:exapascal,
+        ns2:femtopascal,
+        ns2:gigapascal,
+        ns2:hectopascal,
+        ns2:kilopascal,
+        ns2:megapascal,
+        ns2:microbar,
+        ns2:micropascal,
+        ns2:millibar,
+        ns2:millimetreOfMercury,
+        ns2:millipascal,
+        ns2:nanopascal,
+        ns2:petapascal,
+        ns2:picopascal,
+        ns2:terapascal ;
+    ns2:Unit ns2:atmosphere-Standard,
+        ns2:atmosphere-Technical,
+        ns2:bar,
+        ns2:barye,
+        ns2:metreOfMercury,
+        ns2:pascal,
+        ns2:torr ;
+
+    rdfs:subClassOf base:C006 .
+
+:SamplingTime a owl:Class ;
+    ns2:PrefixedUnit ns2:millisecond,
+        ns2:nanosecond ;
+    ns2:Unit ns2:hour,
+        ns2:minute,
+        ns2:second,
+		"min",
+		"s",
+		"sec" ;
+    rdfs:subClassOf base:C006 .
+
+:SingleStarAccuracyBias a owl:Class ;
+    rdfs:subClassOf base:C006,
+        :SingleStarAccuracy;
+	ns2:Unit ns2:second-Angle,
+			ns2:minute-Angle,
+			"arcsec",
+			"arcmin",
+			"'",
+			"\"" ;
+	ns2:PrefixedUnit ns2:millisecond-Angle,
+					 ns2:microsecond-Angle,
+				     "arcms",
+				     "μas" .
+
+:SingleStarAccuracyNoise a owl:Class ;
+    rdfs:subClassOf base:C006,
+        :SingleStarAccuracy ;
+	ns2:Unit ns2:second-Angle,
+			ns2:minute-Angle,
+			"arcsec",
+			"arcmin",
+			"'",
+			"\"" ;
+	ns2:PrefixedUnit ns2:millisecond-Angle,
+					 ns2:microsecond-Angle,
+				     "arcms",
+				     "μas" .
+
+:SlewRate a owl:Class ;
+    rdfs:subClassOf base:C006 ;
+	ns2:Unit :degreePerSecond-Time,
+			 "°/sec";
+    skos:altLabel "Slew Rate Capability"^^rdfs:Literal .
+
+:SlewTolerance a owl:Class ;
+    rdfs:subClassOf base:C006 ;
+	ns2:Unit :degreePerSecond-Time ,
+			 "°/sec"	.
+
+:SunExclusionAngle a owl:Class ;
+    rdfs:subClassOf base:C006 ;
+	ns2:Unit ns2:degree ;
+    skos:altLabel "Sun angle"^^rdfs:Literal,
+        "Sun avoidance"^^rdfs:Literal,
+        "Sun exclustion"^^rdfs:Literal,
+        "Sun keep out"^^rdfs:Literal ;
+    skos:prefLabel "Sun exclusion angle"^^rdfs:Literal .
+
+:TrackingRate a owl:Class ;
+    rdfs:subClassOf base:C006 ;
+	ns2:Unit :degreePerSecond-Time,
+			 "°/sec";
+    skos:altLabel "Tracking"^^rdfs:Literal .
+
+:PixelSize a owl:Class ;
+    rdfs:subClassOf base:C006 ;
+	ns2:PrefixedUnit ns2:centimetre,
+        ns2:decimetre,
+        ns2:kilometre,
+        ns2:micrometre,
+        ns2:millimetre,
+        ns2:nanometre,
+        ns2:picometre ;
+    ns2:Unit ns2:foot,
+        ns2:inch,
+        ns2:metre,
+        ns2:mile,
+        ns2:yard,
+		"ft",
+		"'",
+		"''",
+		"yd" .

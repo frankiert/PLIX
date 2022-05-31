@@ -1,0 +1,16 @@
+camelot-py[all]
+ftfy
+nltk
+numpy
+opencv-python
+pandas
+Pattern
+pdf2image
+pdfminer.six
+Pillow
+pint
+pyspellchecker
+pytesseract
+rdflib
+text-unidecode
+validators

@@ -1,0 +1,884 @@
+@prefix : <http://ontology.dlr.de/fk-datasheets/physical-property#> .
+@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns2: <http://schema.org/> .
+@prefix ns3: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:AirGapThickness a owl:Class ;
+    rdfs:label "air gap thickness" ;
+    ns2:about "https://en.wikipedia.org/wiki/Air-gap_flash" ;
+    ns3:PrefixedUnit "centimetre",
+        "decametre",
+        "decimetre",
+        "kilometre",
+        "metre",
+        "micrometre",
+        "millimetre",
+        "nanometre" ;
+    ns3:Unit "millimetre" ;
+    ns3:alternativeSymbol "mm" ;
+    ns3:symbol "cm",
+        "dam",
+        "dm",
+        "km",
+        "m",
+        "mm",
+        "nm" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q4697622> ;
+    ns1:altLabel "air - gap",
+        "air gap",
+        "airgap" .
+
+:CoilResistance a owl:Class ;
+    rdfs:label "coil resistance" ;
+    ns2:about "https://en.wikipedia.org/wiki/Coil_(chemistry)",
+        "https://en.wikipedia.org/wiki/Electromagnetic_coil",
+        "https://en.wikipedia.org/wiki/Resistance_movement",
+        "https://en.wikipedia.org/wiki/Spiral" ;
+    ns3:PrefixedUnit "centio",
+        "decao",
+        "decio",
+        "gigao",
+        "kiloo",
+        "megao",
+        "microo",
+        "millio",
+        "nanoo",
+        "o" ;
+    ns3:Unit "o" ;
+    ns3:alternativeSymbol "o" ;
+    ns3:symbol "co",
+        "dao",
+        "do",
+        "go",
+        "mo",
+        "no",
+        "o" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q138796>,
+        <https://www.wikidata.org/entity/Q189114>,
+        <https://www.wikidata.org/entity/Q2041543>,
+        <https://www.wikidata.org/entity/Q2981904>,
+        <https://www.wikidata.org/entity/Q602358>,
+        <https://www.wikidata.org/entity/Q921624> ;
+    rdfs:subClassOf <https://www.wikidata.org/entity/Q161973>,
+        <https://www.wikidata.org/entity/Q210729>,
+        <https://www.wikidata.org/entity/Q25629903>,
+        <https://www.wikidata.org/entity/Q41551>,
+        <https://www.wikidata.org/entity/Q43229>,
+        <https://www.wikidata.org/entity/Q49773>,
+        <https://www.wikidata.org/entity/Q5325>,
+        <https://www.wikidata.org/entity/Q9332> ;
+    ns1:altLabel "electrical resistance",
+        "electromagnetic coil",
+        "spiral" .
+
+:CopperLoss a owl:Class ;
+    rdfs:label "copper loss" ;
+    ns2:about "https://en.wikipedia.org/wiki/Copper_loss" ;
+    ns3:PrefixedUnit "centiwatt",
+        "decawatt",
+        "deciwatt",
+        "gigawatt",
+        "kilowatt",
+        "megawatt",
+        "microwatt",
+        "milliwatt",
+        "nanowatt",
+        "watt" ;
+    ns3:Unit "kilowatt" ;
+    ns3:alternativeSymbol "kw" ;
+    ns3:symbol "cw",
+        "daw",
+        "dw",
+        "gw",
+        "kw",
+        "mw",
+        "nw",
+        "w" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q1225223> .
+
+:CoreLoss a owl:Class ;
+    rdfs:label "core loss" ;
+    ns3:PrefixedUnit "centiwatt",
+        "decawatt",
+        "deciwatt",
+        "gigawatt",
+        "kilowatt",
+        "megawatt",
+        "microwatt",
+        "milliwatt",
+        "nanowatt",
+        "watt" ;
+    ns3:Unit "kilowatt" ;
+    ns3:alternativeSymbol "kw" ;
+    ns3:symbol "cw",
+        "daw",
+        "dw",
+        "gw",
+        "kw",
+        "mw",
+        "nw",
+        "w" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q58647256>,
+        <https://www.wikidata.org/entity/Q63379681> ;
+    rdfs:type <https://www.wikidata.org/entity/Q13442814> .
+
+:CurrentSource a owl:Class ;
+    rdfs:label "current source" ;
+    ns2:about "https://en.wikipedia.org/wiki/Current_source" ;
+    ns3:PrefixedUnit "ampere",
+        "centiampere",
+        "decaampere",
+        "deciampere",
+        "gigaampere",
+        "hectoampere",
+        "kiloampere",
+        "megaampere",
+        "microampere",
+        "milliampere",
+        "nanoampere" ;
+    ns3:Unit "ampere" ;
+    ns3:alternativeSymbol "a" ;
+    ns3:symbol "a",
+        "ca",
+        "da",
+        "daa",
+        "ga",
+        "ha",
+        "ka",
+        "ma",
+        "na" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q1163768> ;
+    rdfs:subClassOf <https://www.wikidata.org/entity/Q1815901> ;
+    ns1:altLabel "electric current" .
+
+:EddyCurrentLosses a owl:Class ;
+    rdfs:label "eddy current losses" ;
+    ns3:PrefixedUnit "centiwatt",
+        "decawatt",
+        "deciwatt",
+        "gigawatt",
+        "kilowatt",
+        "megawatt",
+        "microwatt",
+        "milliwatt",
+        "nanowatt",
+        "watt" ;
+    ns3:Unit "kilowatt" ;
+    ns3:alternativeSymbol "kw" ;
+    ns3:symbol "cw",
+        "daw",
+        "dw",
+        "gw",
+        "kw",
+        "mw",
+        "nw",
+        "w" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q59607365> ;
+    rdfs:type <https://www.wikidata.org/entity/Q13442814> ;
+    ns1:altLabel "eddy current loss" .
+
+:ElectromagneticEfficiency a owl:Class ;
+    rdfs:label "electromagnetic efficiency" ;
+    ns2:about "https://en.wikipedia.org/wiki/Mechanical_efficiency",
+        "https://en.wikipedia.org/wiki/Thermal_efficiency",
+        "https://en.wikipedia.org/wiki/Waveguide_(radio_frequency)" ;
+    ns3:PrefixedUnit "%",
+        "percentage" ;
+    ns3:Unit "%",
+        "percentage" ;
+    ns3:alternativeSymbol "%" ;
+    ns3:symbol "%" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q11945244>,
+        <https://www.wikidata.org/entity/Q1452104>,
+        <https://www.wikidata.org/entity/Q2628085>,
+        <https://www.wikidata.org/entity/Q26711933>,
+        <https://www.wikidata.org/entity/Q354724>,
+        <https://www.wikidata.org/entity/Q73391977>,
+        <https://www.wikidata.org/entity/Q92157468> ;
+    rdfs:member <https://www.wikidata.org/entity/Q1349167>,
+        <https://www.wikidata.org/entity/Q47528> ;
+    rdfs:subClassOf <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q11233438>,
+        <https://www.wikidata.org/entity/Q11945244>,
+        <https://www.wikidata.org/entity/Q126818> ;
+    ns1:altLabel "mechanical efficiency" .
+
+:MachineLength a owl:Class ;
+    rdfs:label "machine length" ;
+    ns2:about "https://en.wikipedia.org/wiki/Length",
+        "https://en.wikipedia.org/wiki/Machine",
+        "https://en.wikipedia.org/wiki/Machine_(mechanical)",
+        "https://en.wikipedia.org/wiki/Machine_learning",
+        "https://en.wikipedia.org/wiki/Unit_of_length" ;
+    ns3:PrefixedUnit "centimetre",
+        "decametre",
+        "decimetre",
+        "kilometre",
+        "metre",
+        "micrometre",
+        "millimetre",
+        "nanometre" ;
+    ns3:Unit "millimetre" ;
+    ns3:alternativeSymbol "mm" ;
+    ns3:symbol "cm",
+        "dam",
+        "dm",
+        "km",
+        "m",
+        "mm",
+        "nm" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q11019>,
+        <https://www.wikidata.org/entity/Q16038819>,
+        <https://www.wikidata.org/entity/Q1882685>,
+        <https://www.wikidata.org/entity/Q1978718>,
+        <https://www.wikidata.org/entity/Q2041543>,
+        <https://www.wikidata.org/entity/Q2199864>,
+        <https://www.wikidata.org/entity/Q2539>,
+        <https://www.wikidata.org/entity/Q26711932>,
+        <https://www.wikidata.org/entity/Q36253>,
+        <https://www.wikidata.org/entity/Q4086271>,
+        <https://www.wikidata.org/entity/Q68977959>,
+        <https://www.wikidata.org/entity/Q90137277> ;
+    rdfs:member <https://www.wikidata.org/entity/Q11660> ;
+    rdfs:subClassOf <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q11019>,
+        <https://www.wikidata.org/entity/Q11660>,
+        <https://www.wikidata.org/entity/Q1183543>,
+        <https://www.wikidata.org/entity/Q181175>,
+        <https://www.wikidata.org/entity/Q192276>,
+        <https://www.wikidata.org/entity/Q21198>,
+        <https://www.wikidata.org/entity/Q28733284>,
+        <https://www.wikidata.org/entity/Q30337748>,
+        <https://www.wikidata.org/entity/Q39546>,
+        <https://www.wikidata.org/entity/Q47574> ;
+    rdfs:type <https://www.wikidata.org/entity/Q11862829>,
+        <https://www.wikidata.org/entity/Q192276> ;
+    ns1:altLabel "length unit" .
+
+:MachineLossTotals a owl:Class ;
+    rdfs:label "machine loss totals" ;
+    ns2:about "https://en.wikipedia.org/wiki/Total-loss_oiling_system",
+        "https://en.wikipedia.org/wiki/Total_loss" ;
+    ns3:PrefixedUnit "centiwatt",
+        "decawatt",
+        "deciwatt",
+        "gigawatt",
+        "kilowatt",
+        "megawatt",
+        "microwatt",
+        "milliwatt",
+        "nanowatt",
+        "watt" ;
+    ns3:Unit "kilowatt" ;
+    ns3:alternativeSymbol "kw" ;
+    ns3:symbol "cw",
+        "daw",
+        "dw",
+        "gw",
+        "kw",
+        "mw",
+        "nw",
+        "w" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q315971>,
+        <https://www.wikidata.org/entity/Q7827939> ;
+    rdfs:type <https://www.wikidata.org/entity/Q3505845> .
+
+:MechanicalPower a owl:Class ;
+    rdfs:label "mechanical power" ;
+    ns3:PrefixedUnit "centiwatt",
+        "decawatt",
+        "deciwatt",
+        "gigawatt",
+        "kilowatt",
+        "megawatt",
+        "microwatt",
+        "milliwatt",
+        "nanowatt",
+        "watt" ;
+    ns3:Unit "kilowatt" ;
+    ns3:alternativeSymbol "kw" ;
+    ns3:symbol "cw",
+        "daw",
+        "dw",
+        "gw",
+        "kw",
+        "mw",
+        "nw",
+        "w" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q26711933>,
+        <https://www.wikidata.org/entity/Q73391977>,
+        <https://www.wikidata.org/entity/Q80806956> ;
+    rdfs:subClassOf <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q181175>,
+        <https://www.wikidata.org/entity/Q25342> .
+
+:NumberOfCoil a owl:Class ;
+    rdfs:label "number of coil" ;
+    ns2:about "https://en.wikipedia.org/wiki/Word_count" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q8034324> ;
+    ns1:altLabel "# coil",
+        "# coils",
+        "# of coils",
+        "coil number",
+        "number coils",
+        "number of coils" .
+
+:NumberOfPhase a owl:Class ;
+    rdfs:label "number of phase" ;
+    ns2:about "https://en.wikipedia.org/wiki/Dimension",
+        "https://en.wikipedia.org/wiki/Heat",
+        "https://en.wikipedia.org/wiki/Phase_(matter)" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q104837>,
+        <https://www.wikidata.org/entity/Q2091629>,
+        <https://www.wikidata.org/entity/Q2657718>,
+        <https://www.wikidata.org/entity/Q26711934>,
+        <https://www.wikidata.org/entity/Q309314>,
+        <https://www.wikidata.org/entity/Q4440864>,
+        <https://www.wikidata.org/entity/Q44432>,
+        <https://www.wikidata.org/entity/Q614112>,
+        <https://www.wikidata.org/entity/Q86976044>,
+        <https://www.wikidata.org/entity/Q92157468> ;
+    rdfs:member <https://www.wikidata.org/entity/Q213016> ;
+    rdfs:subClassOf <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q11379>,
+        <https://www.wikidata.org/entity/Q126818>,
+        <https://www.wikidata.org/entity/Q15211908>,
+        <https://www.wikidata.org/entity/Q230875>,
+        <https://www.wikidata.org/entity/Q3924032>,
+        <https://www.wikidata.org/entity/Q937228> ;
+    rdfs:type <https://www.wikidata.org/entity/Q188211>,
+        <https://www.wikidata.org/entity/Q900800> ;
+    ns1:altLabel "# of phases",
+        "# phase",
+        "# phases",
+        "phase number" .
+
+:NumberOfPolePairs a owl:Class ;
+    rdfs:label "number of pole pairs" ;
+    ns1:altLabel "# of pole pairs",
+        "# pole pair",
+        "# pole pairs",
+        "number pole pairs",
+        "pole pair number",
+        "pole pairs" .
+
+:NumberOfPoles a owl:Class ;
+    rdfs:label "number of poles" ;
+    ns2:about "https://en.wikipedia.org/wiki/Comedy",
+        "https://en.wikipedia.org/wiki/Entirety",
+        "https://en.wikipedia.org/wiki/Heat",
+        "https://en.wikipedia.org/wiki/Number_theory",
+        "https://en.wikipedia.org/wiki/Post_(structural)",
+        "https://en.wikipedia.org/wiki/Quantity" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q12479>,
+        <https://www.wikidata.org/entity/Q1370617>,
+        <https://www.wikidata.org/entity/Q16868672>,
+        <https://www.wikidata.org/entity/Q19180675>,
+        <https://www.wikidata.org/entity/Q2041543>,
+        <https://www.wikidata.org/entity/Q2180428>,
+        <https://www.wikidata.org/entity/Q2657718>,
+        <https://www.wikidata.org/entity/Q26711934>,
+        <https://www.wikidata.org/entity/Q30059240>,
+        <https://www.wikidata.org/entity/Q309314>,
+        <https://www.wikidata.org/entity/Q40831>,
+        <https://www.wikidata.org/entity/Q44432>,
+        <https://www.wikidata.org/entity/Q602358>,
+        <https://www.wikidata.org/entity/Q614112>,
+        <https://www.wikidata.org/entity/Q92157468> ;
+    rdfs:member <https://www.wikidata.org/entity/Q213016>,
+        <https://www.wikidata.org/entity/Q395>,
+        <https://www.wikidata.org/entity/Q837863> ;
+    rdfs:subClassOf <https://www.wikidata.org/entity/Q1058733>,
+        <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q11379>,
+        <https://www.wikidata.org/entity/Q15211908>,
+        <https://www.wikidata.org/entity/Q192276>,
+        <https://www.wikidata.org/entity/Q246672>,
+        <https://www.wikidata.org/entity/Q395>,
+        <https://www.wikidata.org/entity/Q66055>,
+        <https://www.wikidata.org/entity/Q7725634>,
+        <https://www.wikidata.org/entity/Q811979>,
+        <https://www.wikidata.org/entity/Q838948>,
+        <https://www.wikidata.org/entity/Q937228> ;
+    rdfs:type <https://www.wikidata.org/entity/Q1936384>,
+        <https://www.wikidata.org/entity/Q21278897>,
+        <https://www.wikidata.org/entity/Q483394>,
+        <https://www.wikidata.org/entity/Q900800> ;
+    ns1:altLabel "# of poles",
+        "# poles",
+        "number poles",
+        "pole number" .
+
+:NumberOfRotor a owl:Class ;
+    rdfs:label "number of rotor" ;
+    ns2:about "https://en.wikipedia.org/wiki/Dimension",
+        "https://en.wikipedia.org/wiki/Heat" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q2091629>,
+        <https://www.wikidata.org/entity/Q2657718>,
+        <https://www.wikidata.org/entity/Q26711934>,
+        <https://www.wikidata.org/entity/Q309314>,
+        <https://www.wikidata.org/entity/Q4440864>,
+        <https://www.wikidata.org/entity/Q44432>,
+        <https://www.wikidata.org/entity/Q614112>,
+        <https://www.wikidata.org/entity/Q86976044>,
+        <https://www.wikidata.org/entity/Q92157468> ;
+    rdfs:member <https://www.wikidata.org/entity/Q213016> ;
+    rdfs:subClassOf <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q11379>,
+        <https://www.wikidata.org/entity/Q126818>,
+        <https://www.wikidata.org/entity/Q15211908>,
+        <https://www.wikidata.org/entity/Q3924032>,
+        <https://www.wikidata.org/entity/Q937228> ;
+    rdfs:type <https://www.wikidata.org/entity/Q188211>,
+        <https://www.wikidata.org/entity/Q900800> ;
+    ns1:altLabel "# of rotors",
+        "# rotor",
+        "# rotors",
+        "rotor number" .
+
+:NumberOfStator a owl:Class ;
+    rdfs:label "number of stator" ;
+    ns2:about "https://en.wikipedia.org/wiki/Word_count" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q12605186>,
+        <https://www.wikidata.org/entity/Q8034324> ;
+    rdfs:type <https://www.wikidata.org/entity/Q7725634> ;
+    ns1:altLabel "# of stators",
+        "# stator",
+        "# stators",
+        "stator number" .
+
+:NumberOfTurns a owl:Class ;
+    rdfs:label "number of turns" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q26711936>,
+        <https://www.wikidata.org/entity/Q77995997> ;
+    rdfs:subClassOf <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q126818> ;
+    ns1:altLabel "# of turns",
+        "# turn",
+        "# turns",
+        "turn number" .
+
+:PhaseResistance a owl:Class ;
+    rdfs:label "phase resistance" ;
+    ns2:about "https://en.wikipedia.org/wiki/Phase_(matter)",
+        "https://en.wikipedia.org/wiki/Phase_(waves)",
+        "https://en.wikipedia.org/wiki/Phaseolus",
+        "https://en.wikipedia.org/wiki/Planetary_phase",
+        "https://en.wikipedia.org/wiki/Resistance_(psychoanalysis)",
+        "https://en.wikipedia.org/wiki/Resistance_movement" ;
+    ns3:PrefixedUnit "centio",
+        "decao",
+        "decio",
+        "gigao",
+        "kiloo",
+        "megao",
+        "microo",
+        "millio",
+        "nanoo",
+        "o" ;
+    ns3:Unit "o" ;
+    ns3:alternativeSymbol "o" ;
+    ns3:symbol "co",
+        "dao",
+        "do",
+        "go",
+        "mo",
+        "no",
+        "o" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q104837>,
+        <https://www.wikidata.org/entity/Q1048490>,
+        <https://www.wikidata.org/entity/Q138796>,
+        <https://www.wikidata.org/entity/Q185553>,
+        <https://www.wikidata.org/entity/Q19180675>,
+        <https://www.wikidata.org/entity/Q1970746>,
+        <https://www.wikidata.org/entity/Q2041543>,
+        <https://www.wikidata.org/entity/Q2350831>,
+        <https://www.wikidata.org/entity/Q2657718>,
+        <https://www.wikidata.org/entity/Q26711936>,
+        <https://www.wikidata.org/entity/Q3088430>,
+        <https://www.wikidata.org/entity/Q310438>,
+        <https://www.wikidata.org/entity/Q602358> ;
+    rdfs:member <https://www.wikidata.org/entity/Q77468620>,
+        <https://www.wikidata.org/entity/Q818557> ;
+    rdfs:subClassOf <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q230875>,
+        <https://www.wikidata.org/entity/Q25358>,
+        <https://www.wikidata.org/entity/Q43229>,
+        <https://www.wikidata.org/entity/Q4373292>,
+        <https://www.wikidata.org/entity/Q49773>,
+        <https://www.wikidata.org/entity/Q9332> ;
+    rdfs:type <https://www.wikidata.org/entity/Q16521> ;
+    ns1:altLabel "ac resistance" .
+
+:PhysicalProperty a owl:Ontology .
+
+:PmThickness a owl:Class ;
+    rdfs:label "pm thickness" ;
+    ns2:about "https://en.wikipedia.org/wiki/Particulates" ;
+    ns3:PrefixedUnit "centimetre",
+        "decametre",
+        "decimetre",
+        "kilometre",
+        "metre",
+        "micrometre",
+        "millimetre",
+        "nanometre" ;
+    ns3:Unit "millimetre" ;
+    ns3:alternativeSymbol "mm" ;
+    ns3:symbol "cm",
+        "dam",
+        "dm",
+        "km",
+        "m",
+        "mm",
+        "nm" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q26711932>,
+        <https://www.wikidata.org/entity/Q3589038>,
+        <https://www.wikidata.org/entity/Q498957>,
+        <https://www.wikidata.org/entity/Q90137277> ;
+    rdfs:subClassOf <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q223557>,
+        <https://www.wikidata.org/entity/Q322481>,
+        <https://www.wikidata.org/entity/Q36253>,
+        <https://www.wikidata.org/entity/Q66902062> ;
+    ns1:altLabel "magnet ' s thickness",
+        "magnet thickness" .
+
+:RatedPower a owl:Class ;
+    rdfs:label "rated power" ;
+    ns2:about "https://en.wikipedia.org/wiki/Ampacity",
+        "https://en.wikipedia.org/wiki/Honey_badger",
+        "https://en.wikipedia.org/wiki/Power_(physics)",
+        "https://en.wikipedia.org/wiki/Power_(social_and_political)",
+        "https://en.wikipedia.org/wiki/Rate_(mathematics)" ;
+    ns3:PrefixedUnit "centiwatt",
+        "decawatt",
+        "deciwatt",
+        "gigawatt",
+        "kilowatt",
+        "megawatt",
+        "microwatt",
+        "milliwatt",
+        "nanowatt",
+        "watt" ;
+    ns3:Unit "kilowatt" ;
+    ns3:alternativeSymbol "kw" ;
+    ns3:symbol "cw",
+        "daw",
+        "dw",
+        "gw",
+        "kw",
+        "mw",
+        "nw",
+        "w" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q11241407>,
+        <https://www.wikidata.org/entity/Q1144560>,
+        <https://www.wikidata.org/entity/Q173128>,
+        <https://www.wikidata.org/entity/Q19180675>,
+        <https://www.wikidata.org/entity/Q1977384>,
+        <https://www.wikidata.org/entity/Q20078554>,
+        <https://www.wikidata.org/entity/Q2041543>,
+        <https://www.wikidata.org/entity/Q25107>,
+        <https://www.wikidata.org/entity/Q25342>,
+        <https://www.wikidata.org/entity/Q2657718>,
+        <https://www.wikidata.org/entity/Q52011740>,
+        <https://www.wikidata.org/entity/Q52055677>,
+        <https://www.wikidata.org/entity/Q602358>,
+        <https://www.wikidata.org/entity/Q736288> ;
+    rdfs:subClassOf <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q1207505>,
+        <https://www.wikidata.org/entity/Q160151>,
+        <https://www.wikidata.org/entity/Q181175>,
+        <https://www.wikidata.org/entity/Q18340964>,
+        <https://www.wikidata.org/entity/Q203066>,
+        <https://www.wikidata.org/entity/Q29175>,
+        <https://www.wikidata.org/entity/Q8161> ;
+    rdfs:type <https://www.wikidata.org/entity/Q16521>,
+        <https://www.wikidata.org/entity/Q33104069>,
+        <https://www.wikidata.org/entity/Q33104129>,
+        <https://www.wikidata.org/entity/Q5> ;
+    ns1:altLabel "nominal power",
+        "power rating",
+        "rated continuous power",
+        "rated output power",
+        "rating power" .
+
+:RatedSpeed a owl:Class ;
+    rdfs:label "rated speed" ;
+    ns3:PrefixedUnit "krpm",
+        "min ^ - 1",
+        "rpm" ;
+    ns3:Unit "rpm" ;
+    ns3:alternativeSymbol "rpm" ;
+    ns3:symbol "krpm",
+        "min ^ - 1",
+        "rpm" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q64441440> ;
+    rdfs:type <https://www.wikidata.org/entity/Q118155> ;
+    ns1:altLabel "nominal speed",
+        "rated continuous speed",
+        "rated output speed",
+        "rated rotational speed",
+        "rating speed",
+        "speed rating" .
+
+:RotorLength a owl:Class ;
+    rdfs:label "rotor length" ;
+    ns2:about "https://en.wikipedia.org/wiki/Length",
+        "https://en.wikipedia.org/wiki/Rotor_(electric)",
+        "https://en.wikipedia.org/wiki/Rotor_(mathematics)",
+        "https://en.wikipedia.org/wiki/Unit_of_length" ;
+    ns3:PrefixedUnit "centimetre",
+        "decametre",
+        "decimetre",
+        "kilometre",
+        "metre",
+        "micrometre",
+        "millimetre",
+        "nanometre" ;
+    ns3:Unit "millimetre" ;
+    ns3:alternativeSymbol "mm" ;
+    ns3:symbol "cm",
+        "dam",
+        "dm",
+        "km",
+        "m",
+        "mm",
+        "nm" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q15141537>,
+        <https://www.wikidata.org/entity/Q16038819>,
+        <https://www.wikidata.org/entity/Q193466>,
+        <https://www.wikidata.org/entity/Q1978718>,
+        <https://www.wikidata.org/entity/Q2199864>,
+        <https://www.wikidata.org/entity/Q2657718>,
+        <https://www.wikidata.org/entity/Q26711932>,
+        <https://www.wikidata.org/entity/Q36253>,
+        <https://www.wikidata.org/entity/Q4086271>,
+        <https://www.wikidata.org/entity/Q56404686>,
+        <https://www.wikidata.org/entity/Q68977959>,
+        <https://www.wikidata.org/entity/Q7370585>,
+        <https://www.wikidata.org/entity/Q90137277> ;
+    rdfs:member <https://www.wikidata.org/entity/Q25841836>,
+        <https://www.wikidata.org/entity/Q72313> ;
+    rdfs:subClassOf <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q11348>,
+        <https://www.wikidata.org/entity/Q1183543>,
+        <https://www.wikidata.org/entity/Q15141537>,
+        <https://www.wikidata.org/entity/Q181175>,
+        <https://www.wikidata.org/entity/Q192276>,
+        <https://www.wikidata.org/entity/Q28733284>,
+        <https://www.wikidata.org/entity/Q30337748>,
+        <https://www.wikidata.org/entity/Q47574>,
+        <https://www.wikidata.org/entity/Q752641> ;
+    rdfs:type <https://www.wikidata.org/entity/Q192276>,
+        <https://www.wikidata.org/entity/Q839546>,
+        <https://www.wikidata.org/entity/Q937228> .
+
+:RotorOuterDiameter a owl:Class ;
+    rdfs:label "rotor outer diameter" ;
+    ns3:PrefixedUnit "centimetre",
+        "decametre",
+        "decimetre",
+        "kilometre",
+        "metre",
+        "micrometre",
+        "millimetre",
+        "nanometre" ;
+    ns3:Unit "millimetre" ;
+    ns3:alternativeSymbol "mm" ;
+    ns3:symbol "cm",
+        "dam",
+        "dm",
+        "km",
+        "m",
+        "mm",
+        "nm" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q22459231>,
+        <https://www.wikidata.org/entity/Q49620080> ;
+    rdfs:type <https://www.wikidata.org/entity/Q28337>,
+        <https://www.wikidata.org/entity/Q478251> ;
+    ns1:altLabel "outer diameter of rotor",
+        "outer radii of rotor",
+        "outer radius of rotor",
+        "rotor od",
+        "rotor outer radii",
+        "rotor outer radius" .
+
+:RotorSpeed a owl:Class ;
+    rdfs:label "rotor speed" ;
+    ns3:PrefixedUnit "rpm" ;
+    ns3:Unit "rpm" ;
+    ns3:alternativeSymbol "rpm" ;
+    ns3:symbol "rpm" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q57723769> ;
+    rdfs:type <https://www.wikidata.org/entity/Q13442814> .
+
+:SpecificPower a owl:Class ;
+    rdfs:label "specific power" ;
+    ns3:PrefixedUnit "kw / kg",
+        "w / kg" ;
+    ns3:Unit "kw / kg" ;
+    ns3:alternativeSymbol "kw / kg" ;
+    ns3:symbol "kw / kg",
+        "w / kg" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q76980992> ;
+    rdfs:type <https://www.wikidata.org/entity/Q30612> .
+
+:StatorInnerDiameter a owl:Class ;
+    rdfs:label "stator inner diameter" ;
+    ns3:PrefixedUnit "centimetre",
+        "decametre",
+        "decimetre",
+        "kilometre",
+        "metre",
+        "micrometre",
+        "millimetre",
+        "nanometre" ;
+    ns3:Unit "millimetre" ;
+    ns3:alternativeSymbol "mm" ;
+    ns3:symbol "cm",
+        "dam",
+        "dm",
+        "km",
+        "m",
+        "mm",
+        "nm" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q64729900> ;
+    rdfs:subClassOf <https://www.wikidata.org/entity/Q126017> ;
+    rdfs:type <https://www.wikidata.org/entity/Q2101564> ;
+    ns1:altLabel "inner diameter of stator",
+        "inner radii of stator",
+        "inner radius of stator",
+        "stator id",
+        "stator inner radii",
+        "stator inner radius" .
+
+:StatorLength a owl:Class ;
+    rdfs:label "stator length" ;
+    ns2:about "https://en.wikipedia.org/wiki/Length",
+        "https://en.wikipedia.org/wiki/Stator",
+        "https://en.wikipedia.org/wiki/Unit_of_length" ;
+    ns3:PrefixedUnit "centimetre",
+        "decametre",
+        "decimetre",
+        "kilometre",
+        "metre",
+        "micrometre",
+        "millimetre",
+        "nanometre" ;
+    ns3:Unit "millimetre" ;
+    ns3:alternativeSymbol "mm" ;
+    ns3:symbol "cm",
+        "dam",
+        "dm",
+        "km",
+        "m",
+        "mm",
+        "nm" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q16038819>,
+        <https://www.wikidata.org/entity/Q190312>,
+        <https://www.wikidata.org/entity/Q1978718>,
+        <https://www.wikidata.org/entity/Q2199864>,
+        <https://www.wikidata.org/entity/Q26711932>,
+        <https://www.wikidata.org/entity/Q36253>,
+        <https://www.wikidata.org/entity/Q4086271>,
+        <https://www.wikidata.org/entity/Q68977959>,
+        <https://www.wikidata.org/entity/Q90137277> ;
+    rdfs:member <https://www.wikidata.org/entity/Q130760>,
+        <https://www.wikidata.org/entity/Q72313> ;
+    rdfs:subClassOf <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q181175>,
+        <https://www.wikidata.org/entity/Q192276>,
+        <https://www.wikidata.org/entity/Q28733284>,
+        <https://www.wikidata.org/entity/Q30337748>,
+        <https://www.wikidata.org/entity/Q47574> ;
+    rdfs:type <https://www.wikidata.org/entity/Q192276>,
+        <https://www.wikidata.org/entity/Q839546> .
+
+:StatorOuterDiameter a owl:Class ;
+    rdfs:label "stator outer diameter" ;
+    ns3:PrefixedUnit "centimetre",
+        "decametre",
+        "decimetre",
+        "kilometre",
+        "metre",
+        "micrometre",
+        "millimetre",
+        "nanometre" ;
+    ns3:Unit "millimetre" ;
+    ns3:alternativeSymbol "mm" ;
+    ns3:symbol "cm",
+        "dam",
+        "dm",
+        "km",
+        "m",
+        "mm",
+        "nm" ;
+    ns1:altLabel "outer diameter of stator",
+        "outer radii of stator",
+        "outer radius of stator",
+        "stator od",
+        "stator outer radii",
+        "stator outer radius" .
+
+:TotalLosses a owl:Class ;
+    rdfs:label "total losses" ;
+    ns2:about "https://en.wikipedia.org/wiki/Comedy",
+        "https://en.wikipedia.org/wiki/Entirety",
+        "https://en.wikipedia.org/wiki/Failure",
+        "https://en.wikipedia.org/wiki/Heat",
+        "https://en.wikipedia.org/wiki/Quantity" ;
+    ns3:PrefixedUnit "centiwatt",
+        "decawatt",
+        "deciwatt",
+        "gigawatt",
+        "kilowatt",
+        "megawatt",
+        "microwatt",
+        "milliwatt",
+        "nanowatt",
+        "watt" ;
+    ns3:Unit "kilowatt" ;
+    ns3:alternativeSymbol "kw" ;
+    ns3:symbol "cw",
+        "daw",
+        "dw",
+        "gw",
+        "kw",
+        "mw",
+        "nw",
+        "w" ;
+    rdfs:isDefinedBy <https://www.wikidata.org/entity/Q1121708>,
+        <https://www.wikidata.org/entity/Q1370617>,
+        <https://www.wikidata.org/entity/Q16868672>,
+        <https://www.wikidata.org/entity/Q19180675>,
+        <https://www.wikidata.org/entity/Q2041543>,
+        <https://www.wikidata.org/entity/Q2657718>,
+        <https://www.wikidata.org/entity/Q26711934>,
+        <https://www.wikidata.org/entity/Q30059240>,
+        <https://www.wikidata.org/entity/Q309314>,
+        <https://www.wikidata.org/entity/Q40831>,
+        <https://www.wikidata.org/entity/Q44432>,
+        <https://www.wikidata.org/entity/Q602358>,
+        <https://www.wikidata.org/entity/Q614112>,
+        <https://www.wikidata.org/entity/Q92157468> ;
+    rdfs:member <https://www.wikidata.org/entity/Q213016> ;
+    rdfs:subClassOf <https://www.wikidata.org/entity/Q107715>,
+        <https://www.wikidata.org/entity/Q11379>,
+        <https://www.wikidata.org/entity/Q1190554>,
+        <https://www.wikidata.org/entity/Q15211908>,
+        <https://www.wikidata.org/entity/Q192276>,
+        <https://www.wikidata.org/entity/Q246672>,
+        <https://www.wikidata.org/entity/Q2995644>,
+        <https://www.wikidata.org/entity/Q66055>,
+        <https://www.wikidata.org/entity/Q7725634>,
+        <https://www.wikidata.org/entity/Q838948>,
+        <https://www.wikidata.org/entity/Q937228>,
+        <https://www.wikidata.org/entity/Q944806> ;
+    rdfs:type <https://www.wikidata.org/entity/Q21278897>,
+        <https://www.wikidata.org/entity/Q483394>,
+        <https://www.wikidata.org/entity/Q900800> ;
+    ns1:altLabel "total loss" .
+
