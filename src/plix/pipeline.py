@@ -10,6 +10,8 @@ import shutil
 import sys
 from itertools import chain
 
+import pandas as pd
+
 import plix.classes.normalizer as nm
 import plix.classes.pdf_data_extractor as pde
 import plix.classes.table_coordinates_client as tcc
@@ -184,7 +186,7 @@ class Pipeline(object):
         self.extraction_results = extraction_results
         # save data frame
         if self.config.save_intermediate_results:
-            cf.save_df(extraction_results, self.config.result_file)
+            cf.save_df(self.extraction_results, self.config.result_file)
 
     @timer
     def extract_text(self):
@@ -196,7 +198,7 @@ class Pipeline(object):
                                                                         config=self.config)
         self.extraction_results = extraction_results
         if self.config.save_intermediate_results:
-            cf.save_df(extraction_results, self.config.result_file)
+            cf.save_df(self.extraction_results, self.config.result_file)
 
     @timer
     def extract_tables(self):
@@ -208,17 +210,18 @@ class Pipeline(object):
                                                                         config=self.config)
         self.extraction_results = extraction_results
         if self.config.save_intermediate_results:
-            cf.save_df(extraction_results, self.config.result_file)
+            cf.save_df(self.extraction_results, self.config.result_file)
 
     @timer
     def classify_text(self):
         """
         Classifies the texts of all documents with the given classes.
         """
-        extraction_results = tc.classify_texts(self.extraction_results)
-        self.extraction_results = extraction_results
+        classes_, counts = tc.classify_texts(self.extraction_results)
+        self.extraction_results.loc[:, 'Classification'] = classes_
+        self.extraction_results.loc[:, 'ClassificationCount'] = counts
         if self.config.save_intermediate_results:
-            cf.save_df(extraction_results, self.config.result_file)
+            cf.save_df(self.extraction_results, self.config.result_file)
 
     @timer
     def normalize(self):
@@ -226,12 +229,12 @@ class Pipeline(object):
         Normalization step. Formats text/tables/domain knowledge into a predefined format for easier KVU extraction
         """
         # table normalizer
-        if len(self.extraction_results[self.extraction_results["TableData"].str.len() != 0].index) > 0:
+        if cf.df_has_column(self.extraction_results, "TableData"):
             self.extraction_results.loc[:, 'NormalizedTableData'] = nm.normalize_tables_from_pd_series(
                 self.extraction_results['TableData'], self.keywords, self.config.do_table_multiple_normalization)
 
         # text normalizer
-        if len(self.extraction_results[self.extraction_results["MeaningfulText"].str.len() != 0].index) > 0:
+        if cf.df_has_column(self.extraction_results, "MeaningfulText"):
             self.extraction_results.loc[:, 'NormalizedText'] = nm.normalize_text_from_pd_series(
                 self.extraction_results['MeaningfulText'])
 

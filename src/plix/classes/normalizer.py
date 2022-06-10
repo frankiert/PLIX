@@ -18,6 +18,7 @@ import re
 from copy import deepcopy
 
 import text_unidecode
+from pandas import Series
 
 import plix.classes.tokenizer as tk
 import plix.nlp_assets as nlp_assets
@@ -37,13 +38,13 @@ def normalize_tables_from_pd_series(series, keywords, do_table_multiple_normaliz
     :param bool do_table_multiple_normalization: toggle for normalization of multiple keys in one cell
 
     :returns: the normalized tables
-    :rtype: list
+    :rtype: pd.Series
     """
     norm_results = []
     for cell in series:
         norm_tables = normalize_tables(cell, keywords, do_table_multiple_normalization)
         norm_results.append(norm_tables)
-    return norm_results
+    return Series(norm_results)
 
 
 def normalize_text_from_pd_series(series):
@@ -59,7 +60,7 @@ def normalize_text_from_pd_series(series):
     for cell in series:
         norm_text = normalize_text_per_page(cell)
         norm_results.append(norm_text)
-    return norm_results
+    return Series(norm_results)
 
 
 def normalize_text(text):

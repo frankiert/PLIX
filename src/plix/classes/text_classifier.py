@@ -1,6 +1,8 @@
 """
 Class that classifies texts from a dataframe.
 """
+from pandas import Series
+
 import plix.helpers.common_functions as cf
 import plix.nlp_assets as nlp_assets
 
@@ -11,25 +13,10 @@ def classify_texts(df):
 
     :param pd.DataFrame df: dataframe from the data extraction
 
-    :returns: dataframe with added Classification and classification count columns
-    :rtype: pd.DataFrame
+    :returns: Classification and classification count
+    :rtype: tuple
     """
-    df['Classification'], df['ClassificationCount'] = __do_text_classification(df)
-    df = cf.reorder_columns(df, ['Filename',
-                                 'FullPath',
-                                 'Category',
-                                 'Classification',
-                                 'ClassificationCount',
-                                 'TableData',
-                                 'Metadata',
-                                 'allText',
-                                 'cleanText',
-                                 'MeaningfulText',
-                                 'Text',
-                                 'cleanOCRText',
-                                 'OCRedText'
-                                 ])
-    return df
+    return __do_text_classification(df)
 
 
 def __do_text_classification(df):
@@ -51,4 +38,4 @@ def __do_text_classification(df):
                     count[j] += syn_count
         result.append(found_classes)
         count_res.append(count)
-    return result, count_res
+    return Series(result), Series(count_res)

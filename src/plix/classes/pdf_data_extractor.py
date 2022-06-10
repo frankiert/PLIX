@@ -463,8 +463,13 @@ class PDFDataExtractor:
             self.extraction_results = pd.DataFrame(self.paths, columns=['FullPath'])
         else:
             self.extraction_results = df
+        self.__adjust_cores_if_needed()
         self.__parallelize_data_extraction(func, config)
         return self.extraction_results
+
+    def __adjust_cores_if_needed(self):
+        if len(self.extraction_results["FullPath"]) < self.no_cores:
+            self.no_cores = len(self.extraction_results["FullPath"])
 
     def __parallelize_data_extraction(self, func, config):
         df_split = np.array_split(self.extraction_results, self.no_cores)
