@@ -1,3 +1,5 @@
+Private version of my code pusblished Open-Source at Zenodo: https://zenodo.org/record/6597263. 
+
 Installation Instructions & README
 **********************************
 
@@ -7,6 +9,7 @@ As of now, it provides functionality to extract all raw data from PDFs and then 
 
 Setup
 =====
+Please make sure, that you have Ghostscript installed.
 
 Windows only:
 
