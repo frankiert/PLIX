@@ -1,13 +1,13 @@
 """
-Class for SpacySimpleRowUnitMatcher
+Class for StanzaSimpleUnitMatcher
 """
 from evaluation.spacy_.spacy_simple_row_evaluation import SpacySimpleRowMatcher
 from evaluation.spacy_.spacy_simple_table_units_evaluation import SpacySimpleTableUnitMatcher
 
 
-class SpacySimpleRowUnitMatcher(SpacySimpleRowMatcher, SpacySimpleTableUnitMatcher):
-    def __init__(self, keys, units, tables, stanza=False):
-        super().__init__(keys, units, tables, stanza)
+class StanzaSimpleUnitMatcher(SpacySimpleRowMatcher, SpacySimpleTableUnitMatcher):
+    def __init__(self, keys, units, tables):
+        super().__init__(keys, units, tables, stanza=True)
 
     def _extract_kvu(self):
         results = []

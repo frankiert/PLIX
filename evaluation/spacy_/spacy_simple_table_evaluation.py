@@ -4,6 +4,8 @@ Class for SpacySimpleTableMatcher
 from itertools import chain
 
 import spacy
+import spacy_stanza
+import stanza
 from spacy.matcher import DependencyMatcher
 
 DEPENDENCY_MATCH_PATTERN = [
@@ -35,11 +37,15 @@ def _table_to_str(table):
 
 
 class SpacySimpleTableMatcher(object):
-    def __init__(self, keys, units, tables):
+    def __init__(self, keys, units, tables, stanza_=False):
         self.keywords = keys
         self.units = units
         self.tables = tables
-        self.nlp = spacy.load("en_core_web_sm")
+        if not stanza_:
+            self.nlp = spacy.load("en_core_web_sm")
+        else:
+            self.stanza = stanza.download("en")
+            self.nlp = spacy_stanza.load_pipeline("en")
         self.ruler = self.nlp.add_pipe("entity_ruler")
         self.matcher = DependencyMatcher(self.nlp.vocab)
         self.doc = None

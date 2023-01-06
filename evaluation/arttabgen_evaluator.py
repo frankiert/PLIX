@@ -12,7 +12,8 @@ import plix_evaluation
 from evaluation.spacy_ import spacy_simple_table_evaluation as sst, spacy_extended_row_evaluation as ser, \
     spacy_simple_row_evaluation as ssr, spacy_simple_row_units_evaluation as ssru, \
     spacy_extended_row_unit_evaluation as seru, spacy_extended_table_unit_evaluation as setu, \
-    spacy_simple_table_units_evaluation as sstu, spacy_extended_table_evaluation as SET
+    spacy_simple_table_units_evaluation as sstu, spacy_extended_table_evaluation as SET, \
+    stanza_simple_unit_evaluation as SSU, stanza_extended_unit_evaluation as SEU
 from plix.pipeline import timer
 
 
@@ -141,7 +142,9 @@ class ArtTabGenEvaluator(object):
                              "spacy_ex_table": self.get_spacy_ex_table_results,
                              "spacy_ex_table_units": self.get_spacy_ex_table_unit_results,
                              "spacy_ex_row": self.get_spacy_ex_row_results,
-                             "spacy_ex_row_units": self.get_spacy_ex_row_unit_results
+                             "spacy_ex_row_units": self.get_spacy_ex_row_unit_results,
+                             "stanza_simple_units": self.get_stanza_simple_unit_results,
+                             "stanza_ex_units": self.get_stanza_ex_unit_results
                              }
         self.evaluation_methods = self.validate_evaluation_methods(args.evaluations)
         self.arttab_path = args.arttab_path
@@ -232,6 +235,17 @@ class ArtTabGenEvaluator(object):
         results = spacy_matcher.do_extraction()
         return results
 
+    @timer
+    def get_stanza_simple_unit_results(self):
+        stanza_matcher = SSU.StanzaSimpleUnitMatcher(self.keys, self.units, self.tables)
+        results = stanza_matcher.do_extraction()
+        return results
+
+    @timer
+    def get_stanza_ex_unit_results(self):
+        stanza_matcher = SEU.StanzaExtendedRowUnitMatcher(self.keys, self.units, self.tables)
+        results = stanza_matcher.do_extraction()
+        return results
     @timer
     def evaluate_kvu_extraction_tables(self):
         """

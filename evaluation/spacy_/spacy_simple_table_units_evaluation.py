@@ -5,8 +5,8 @@ from evaluation.spacy_.spacy_simple_table_evaluation import SpacySimpleTableMatc
 
 
 class SpacySimpleTableUnitMatcher(SpacySimpleTableMatcher):
-    def __init__(self, keys, units, tables):
-        super().__init__(keys, units, tables)
+    def __init__(self, keys, units, tables, stanza=False):
+        super().__init__(keys, units, tables, stanza)
 
     def _is_valid_kvu(self, kvu_tuple, main_key):
         allowed_units = self.units[main_key]['prefixed_units']

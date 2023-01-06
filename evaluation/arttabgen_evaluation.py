@@ -11,7 +11,7 @@ from plix.pipeline import timer
 parser = argparse.ArgumentParser(description="Commandline tool to benchmark different methods with ArtTabGen tables")
 
 parser.add_argument('--arttab_path', type=str,
-                    default='..\\..\\arttabgen\\out\\ArtTabGen_Motor',
+                    default='..\\..\\..\\arttabgen\\out\\ArtTabGen_Motor',
                     help='input path to the ArtTabGen dataset')
 parser.add_argument('--onto_file', type=str,
                     default="data\\motor_normalized.ttl",
@@ -19,10 +19,10 @@ parser.add_argument('--onto_file', type=str,
 parser.add_argument('--core_onto_file', type=str,
                     default="",
                     help='path to the core ontology')
-parser.add_argument("--evaluations", type=list, default=["plix"],
+parser.add_argument("--evaluations", type=list, default=["spacy_ex_row_units", "stanza_ex_units"],
                     help='Available evaluation methods (need to be passed as list of strings): '
-                         '["spacy_simple_row", "spacy_simple_row_units", "spacy_ex_row", "spacy_ex_row_units", '
-                         '"plix", "plix_pivot"]')
+                         '["stanza_simple_units", "stanza_ex_units", "spacy_simple_row", "spacy_simple_row_units", '
+                         '"spacy_ex_row", "spacy_ex_row_units", "plix", "plix_pivot"]')
 
 
 @timer

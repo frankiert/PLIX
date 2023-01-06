@@ -5,8 +5,8 @@ from evaluation.spacy_.spacy_simple_table_evaluation import SpacySimpleTableMatc
 
 
 class SpacySimpleRowMatcher(SpacySimpleTableMatcher):
-    def __init__(self, keys, units, tables):
-        super().__init__(keys, units, tables)
+    def __init__(self, keys, units, tables, stanza=False):
+        super().__init__(keys, units, tables, stanza)
 
     def _extract_kvu(self):
         results = []

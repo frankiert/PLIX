@@ -62,8 +62,8 @@ UKV_DEPENDENCY_MATCH_PATTERN = [
 
 
 class SpacyExtendedTableMatcher(SpacySimpleTableMatcher):
-    def __init__(self, keys, units, tables):
-        super().__init__(keys, units, tables)
+    def __init__(self, keys, units, tables, stanza=False):
+        super().__init__(keys, units, tables, stanza)
 
     def _add_match_pattern(self):
         self.matcher.add("KVU", [KVU_DEPENDENCY_MATCH_PATTERN])
